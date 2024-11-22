@@ -1,0 +1,1383 @@
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function main is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function init_encoder is not in include list
+DEBUG[cfmse] : Function uncompressStream is not in include list
+DEBUG[cfmse] : Function init_decoder is not in include list
+DEBUG[cfmse] : Function compressStream is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_physmem is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_version_number is not in include list
+DEBUG[cfmse] : Function lzma_version_string is not in include list
+DEBUG[cfmse] : Function lzma_alloc is not in include list
+DEBUG[cfmse] : Function lzma_free is not in include list
+DEBUG[cfmse] : Function lzma_bufcpy is not in include list
+DEBUG[cfmse] : Function lzma_next_filter_init is not in include list
+DEBUG[cfmse] : Function lzma_next_end is not in include list
+DEBUG[cfmse] : Function lzma_next_filter_update is not in include list
+DEBUG[cfmse] : Function lzma_strm_init is not in include list
+DEBUG[cfmse] : Function lzma_code is not in include list
+DEBUG[cfmse] : Function lzma_end is not in include list
+DEBUG[cfmse] : Function lzma_get_check is not in include list
+DEBUG[cfmse] : Function lzma_memusage is not in include list
+DEBUG[cfmse] : Function lzma_memlimit_get is not in include list
+DEBUG[cfmse] : Function lzma_memlimit_set is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_compressed_size is not in include list
+DEBUG[cfmse] : Function lzma_block_unpadded_size is not in include list
+DEBUG[cfmse] : Function lzma_block_total_size is not in include list
+DEBUG[cfmse] : Function vli_ceil4 is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_easy_preset is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_filters_copy is not in include list
+DEBUG[cfmse] : Function lzma_raw_coder_init is not in include list
+DEBUG[cfmse] : Function validate_chain is not in include list
+DEBUG[cfmse] : Function lzma_raw_coder_memusage is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_physmem is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_index_init is not in include list
+DEBUG[cfmse] : Function index_init_plain is not in include list
+DEBUG[cfmse] : Function index_stream_init is not in include list
+DEBUG[cfmse] : Function index_tree_append is not in include list
+DEBUG[cfmse] : Function lzma_index_end is not in include list
+DEBUG[cfmse] : Function index_tree_end is not in include list
+DEBUG[cfmse] : Function index_stream_end is not in include list
+DEBUG[cfmse] : Function lzma_index_prealloc is not in include list
+DEBUG[cfmse] : Function lzma_index_memusage is not in include list
+DEBUG[cfmse] : Function lzma_index_memused is not in include list
+DEBUG[cfmse] : Function lzma_index_block_count is not in include list
+DEBUG[cfmse] : Function lzma_index_stream_count is not in include list
+DEBUG[cfmse] : Function lzma_index_size is not in include list
+DEBUG[cfmse] : Function index_size is not in include list
+DEBUG[cfmse] : Function lzma_index_total_size is not in include list
+DEBUG[cfmse] : Function lzma_index_stream_size is not in include list
+DEBUG[cfmse] : Function lzma_index_file_size is not in include list
+DEBUG[cfmse] : Function index_file_size is not in include list
+DEBUG[cfmse] : Function lzma_index_uncompressed_size is not in include list
+DEBUG[cfmse] : Function lzma_index_checks is not in include list
+DEBUG[cfmse] : Function lzma_index_padding_size is not in include list
+DEBUG[cfmse] : Function index_size_unpadded is not in include list
+DEBUG[cfmse] : Function lzma_index_stream_flags is not in include list
+DEBUG[cfmse] : Function lzma_index_stream_padding is not in include list
+DEBUG[cfmse] : Function lzma_index_append is not in include list
+DEBUG[cfmse] : Function vli_ceil4 is not in include list
+DEBUG[cfmse] : Function lzma_index_cat is not in include list
+DEBUG[cfmse] : Function index_cat_helper is not in include list
+DEBUG[cfmse] : Function lzma_index_dup is not in include list
+DEBUG[cfmse] : Function index_dup_stream is not in include list
+DEBUG[cfmse] : Function index_tree_next is not in include list
+DEBUG[cfmse] : Function lzma_index_iter_init is not in include list
+DEBUG[cfmse] : Function lzma_index_iter_rewind is not in include list
+DEBUG[cfmse] : Function lzma_index_iter_next is not in include list
+DEBUG[cfmse] : Function iter_set_info is not in include list
+DEBUG[cfmse] : Function lzma_index_iter_locate is not in include list
+DEBUG[cfmse] : Function index_tree_locate is not in include list
+DEBUG[cfmse] : Function index_tree_init is not in include list
+DEBUG[cfmse] : Function bsr32 is not in include list
+DEBUG[cfmse] : Function ctz32 is not in include list
+DEBUG[cfmse] : Function index_tree_node_end is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_flags_compare is not in include list
+DEBUG[cfmse] : Function is_backward_size_valid is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_vli_size is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_alone_encoder is not in include list
+DEBUG[cfmse] : Function alone_encoder_init is not in include list
+DEBUG[cfmse] : Function alone_encode is not in include list
+DEBUG[cfmse] : Function alone_encoder_end is not in include list
+DEBUG[cfmse] : Function unaligned_write32le is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_buffer_bound is not in include list
+DEBUG[cfmse] : Function lzma2_bound is not in include list
+DEBUG[cfmse] : Function lzma_block_buffer_encode is not in include list
+DEBUG[cfmse] : Function block_encode_normal is not in include list
+DEBUG[cfmse] : Function block_encode_uncompressed is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_encoder_init is not in include list
+DEBUG[cfmse] : Function block_encode is not in include list
+DEBUG[cfmse] : Function block_encoder_end is not in include list
+DEBUG[cfmse] : Function block_encoder_update is not in include list
+DEBUG[cfmse] : Function lzma_block_encoder is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_header_size is not in include list
+DEBUG[cfmse] : Function lzma_block_header_encode is not in include list
+DEBUG[cfmse] : Function unaligned_write32le is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_easy_buffer_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_easy_encoder is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_easy_encoder_memusage is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_raw_buffer_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_filter_encoder_is_supported is not in include list
+DEBUG[cfmse] : Function encoder_find is not in include list
+DEBUG[cfmse] : Function lzma_filters_update is not in include list
+DEBUG[cfmse] : Function lzma_raw_encoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_raw_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma_raw_encoder is not in include list
+DEBUG[cfmse] : Function lzma_properties_size is not in include list
+DEBUG[cfmse] : Function lzma_properties_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_filter_flags_size is not in include list
+DEBUG[cfmse] : Function lzma_filter_flags_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_index_encoder_init is not in include list
+DEBUG[cfmse] : Function index_encode is not in include list
+DEBUG[cfmse] : Function index_encoder_end is not in include list
+DEBUG[cfmse] : Function index_encoder_reset is not in include list
+DEBUG[cfmse] : Function lzma_index_encoder is not in include list
+DEBUG[cfmse] : Function lzma_index_buffer_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_buffer_bound is not in include list
+DEBUG[cfmse] : Function lzma_stream_buffer_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_encoder_init is not in include list
+DEBUG[cfmse] : Function stream_encode is not in include list
+DEBUG[cfmse] : Function stream_encoder_end is not in include list
+DEBUG[cfmse] : Function stream_encoder_update is not in include list
+DEBUG[cfmse] : Function lzma_stream_encoder is not in include list
+DEBUG[cfmse] : Function block_encoder_init is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_header_encode is not in include list
+DEBUG[cfmse] : Function stream_flags_encode is not in include list
+DEBUG[cfmse] : Function unaligned_write32le is not in include list
+DEBUG[cfmse] : Function lzma_stream_footer_encode is not in include list
+DEBUG[cfmse] : Function is_backward_size_valid is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_vli_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_alone_decoder_init is not in include list
+DEBUG[cfmse] : Function alone_decode is not in include list
+DEBUG[cfmse] : Function alone_decoder_end is not in include list
+DEBUG[cfmse] : Function alone_decoder_memconfig is not in include list
+DEBUG[cfmse] : Function lzma_alone_decoder is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_auto_decoder is not in include list
+DEBUG[cfmse] : Function auto_decoder_init is not in include list
+DEBUG[cfmse] : Function auto_decode is not in include list
+DEBUG[cfmse] : Function auto_decoder_end is not in include list
+DEBUG[cfmse] : Function auto_decoder_get_check is not in include list
+DEBUG[cfmse] : Function auto_decoder_memconfig is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_buffer_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_decoder_init is not in include list
+DEBUG[cfmse] : Function block_decode is not in include list
+DEBUG[cfmse] : Function block_decoder_end is not in include list
+DEBUG[cfmse] : Function lzma_block_decoder is not in include list
+DEBUG[cfmse] : Function update_size is not in include list
+DEBUG[cfmse] : Function is_size_valid is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_block_header_decode is not in include list
+DEBUG[cfmse] : Function unaligned_read32le is not in include list
+DEBUG[cfmse] : Function free_properties is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_easy_decoder_memusage is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_raw_buffer_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_filter_decoder_is_supported is not in include list
+DEBUG[cfmse] : Function decoder_find is not in include list
+DEBUG[cfmse] : Function lzma_raw_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma_raw_decoder is not in include list
+DEBUG[cfmse] : Function lzma_raw_decoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_properties_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_filter_flags_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_index_decoder is not in include list
+DEBUG[cfmse] : Function index_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma_index_buffer_decode is not in include list
+DEBUG[cfmse] : Function index_decoder_reset is not in include list
+DEBUG[cfmse] : Function index_decode is not in include list
+DEBUG[cfmse] : Function index_decoder_end is not in include list
+DEBUG[cfmse] : Function index_decoder_memconfig is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_index_hash_init is not in include list
+DEBUG[cfmse] : Function lzma_index_hash_end is not in include list
+DEBUG[cfmse] : Function lzma_index_hash_size is not in include list
+DEBUG[cfmse] : Function index_size is not in include list
+DEBUG[cfmse] : Function lzma_index_hash_append is not in include list
+DEBUG[cfmse] : Function hash_append is not in include list
+DEBUG[cfmse] : Function index_stream_size is not in include list
+DEBUG[cfmse] : Function lzma_index_hash_decode is not in include list
+DEBUG[cfmse] : Function index_size_unpadded is not in include list
+DEBUG[cfmse] : Function vli_ceil4 is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_buffer_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_decoder_init is not in include list
+DEBUG[cfmse] : Function stream_decode is not in include list
+DEBUG[cfmse] : Function stream_decoder_end is not in include list
+DEBUG[cfmse] : Function stream_decoder_get_check is not in include list
+DEBUG[cfmse] : Function stream_decoder_memconfig is not in include list
+DEBUG[cfmse] : Function stream_decoder_reset is not in include list
+DEBUG[cfmse] : Function lzma_stream_decoder is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_stream_header_decode is not in include list
+DEBUG[cfmse] : Function unaligned_read32le is not in include list
+DEBUG[cfmse] : Function stream_flags_decode is not in include list
+DEBUG[cfmse] : Function lzma_stream_footer_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_vli_decode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_check_is_supported is not in include list
+DEBUG[cfmse] : Function lzma_check_size is not in include list
+DEBUG[cfmse] : Function lzma_check_init is not in include list
+DEBUG[cfmse] : Function lzma_check_update is not in include list
+DEBUG[cfmse] : Function lzma_check_finish is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_crc32 is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_crc64 is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_sha256_init is not in include list
+DEBUG[cfmse] : Function lzma_sha256_update is not in include list
+DEBUG[cfmse] : Function process is not in include list
+DEBUG[cfmse] : Function lzma_sha256_finish is not in include list
+DEBUG[cfmse] : Function transform is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lz_encoder_memusage is not in include list
+DEBUG[cfmse] : Function lz_encoder_prepare is not in include list
+DEBUG[cfmse] : Function lzma_lz_encoder_init is not in include list
+DEBUG[cfmse] : Function lz_encode is not in include list
+DEBUG[cfmse] : Function lz_encoder_end is not in include list
+DEBUG[cfmse] : Function lz_encoder_update is not in include list
+DEBUG[cfmse] : Function lz_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma_mf_is_supported is not in include list
+DEBUG[cfmse] : Function fill_window is not in include list
+DEBUG[cfmse] : Function move_window is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_mf_find is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_find is not in include list
+DEBUG[cfmse] : Function move_pending is not in include list
+DEBUG[cfmse] : Function move_pos is not in include list
+DEBUG[cfmse] : Function hc_find_func is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt2_find is not in include list
+DEBUG[cfmse] : Processing function : bt_find_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : if.end50
+DEBUG[cfmse] : CFMSE merge applied to block : if.end50
+DEBUG[cfmse] : Trying to remove redundant jump from if.end50 to merged.bb..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Function lzma_mf_bt2_skip is not in include list
+DEBUG[cfmse] : Processing function : bt_skip_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : if.end44
+DEBUG[cfmse] : CFMSE merge applied to block : if.end44
+DEBUG[cfmse] : Trying to remove redundant jump from if.end44 to merged.bb..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Function lzma_mf_bt3_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt3_skip is not in include list
+DEBUG[cfmse] : Found then block if.then51
+DEBUG[cfmse] : Added new else block replicated.bb
+DEBUG[cfmse] : Found then block if.then70
+DEBUG[cfmse] : Added new else block replicated.bb223
+DEBUG[cfmse] : Processing function : lzma_mf_bt4_find
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : land.lhs.true
+DEBUG[cfmse] : CFMSE merge applied to block : land.lhs.true
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : land.lhs.true62
+DEBUG[cfmse] : CFMSE merge applied to block : land.lhs.true62
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : for.end
+DEBUG[cfmse] : Trying to remove redundant jump from land.lhs.true to merged.bb..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Trying to remove redundant jump from land.lhs.true62 to merged.bb228..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Function lzma_mf_bt4_skip is not in include list
+DEBUG[cfmse] : Function normalize is not in include list
+DEBUG[cfmse] : Function lzma_mf_find is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_find is not in include list
+DEBUG[cfmse] : Function move_pending is not in include list
+DEBUG[cfmse] : Function move_pos is not in include list
+DEBUG[cfmse] : Function hc_find_func is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt2_find is not in include list
+DEBUG[cfmse] : Processing function : bt_find_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt2_skip is not in include list
+DEBUG[cfmse] : Processing function : bt_skip_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt3_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt3_skip is not in include list
+DEBUG[cfmse] : Found then block land.lhs.true
+DEBUG[cfmse] : Added new else block replicated.bb
+DEBUG[cfmse] : Found then block land.lhs.true62
+DEBUG[cfmse] : Added new else block replicated.bb234
+DEBUG[cfmse] : Processing function : lzma_mf_bt4_find
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : if.end5
+DEBUG[cfmse] : CFMSE merge applied to block : if.end5
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : land.lhs.true58
+DEBUG[cfmse] : CFMSE merge applied to block : land.lhs.true58
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : for.end
+DEBUG[cfmse] : Trying to remove redundant jump from if.end5 to merged.bb..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Trying to remove redundant jump from land.lhs.true58 to merged.bb245..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Function lzma_mf_bt4_skip is not in include list
+DEBUG[cfmse] : Function normalize is not in include list
+DEBUG[cfmse] : Function lzma_mf_find is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_find is not in include list
+DEBUG[cfmse] : Function move_pending is not in include list
+DEBUG[cfmse] : Function move_pos is not in include list
+DEBUG[cfmse] : Function hc_find_func is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt2_find is not in include list
+DEBUG[cfmse] : Processing function : bt_find_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt2_skip is not in include list
+DEBUG[cfmse] : Processing function : bt_skip_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt3_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt3_skip is not in include list
+DEBUG[cfmse] : Found then block land.lhs.true58
+DEBUG[cfmse] : Added new else block replicated.bb
+DEBUG[cfmse] : Processing function : lzma_mf_bt4_find
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : if.end55
+DEBUG[cfmse] : CFMSE merge applied to block : if.end55
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : for.end
+DEBUG[cfmse] : Trying to remove redundant jump from if.end55 to merged.bb..
+DEBUG[cfmse] : Removed redundant jump!
+DEBUG[cfmse] : Function lzma_mf_bt4_skip is not in include list
+DEBUG[cfmse] : Function normalize is not in include list
+DEBUG[cfmse] : Function lzma_mf_find is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_find is not in include list
+DEBUG[cfmse] : Function move_pending is not in include list
+DEBUG[cfmse] : Function move_pos is not in include list
+DEBUG[cfmse] : Function hc_find_func is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc3_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_hc4_skip is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt2_find is not in include list
+DEBUG[cfmse] : Processing function : bt_find_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt2_skip is not in include list
+DEBUG[cfmse] : Processing function : bt_skip_func
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Function lzma_mf_bt3_find is not in include list
+DEBUG[cfmse] : Function lzma_mf_bt3_skip is not in include list
+DEBUG[cfmse] : Processing function : lzma_mf_bt4_find
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Not a diamond-shaped branch, ignoring ...
+DEBUG[cfmse] : Cheking for dimanoind shaped control-flow ...
+DEBUG[cfmse] : Branch is diamond-shaped ...
+DEBUG[cfmse] : Trying to apply CFMSE merge to block : for.end
+DEBUG[cfmse] : Function lzma_mf_bt4_skip is not in include list
+DEBUG[cfmse] : Function normalize is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 7
+INFO[cfmse]: Number of if-then merges : 5
+INFO[cfmse]: Number of if-then-else merges : 2
+INFO[cfmse]: Number of select instructions added : 41
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lz_decoder_init is not in include list
+DEBUG[cfmse] : Function lz_decode is not in include list
+DEBUG[cfmse] : Function lz_decoder_end is not in include list
+DEBUG[cfmse] : Function lz_decoder_reset is not in include list
+DEBUG[cfmse] : Function lzma_lz_decoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_lz_decoder_uncompressed is not in include list
+DEBUG[cfmse] : Function decode_buffer is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma_encode is not in include list
+DEBUG[cfmse] : Function encode_init is not in include list
+DEBUG[cfmse] : Function mf_position is not in include list
+DEBUG[cfmse] : Function rc_encode is not in include list
+DEBUG[cfmse] : Function rc_pending is not in include list
+DEBUG[cfmse] : Function encode_symbol is not in include list
+DEBUG[cfmse] : Function encode_eopm is not in include list
+DEBUG[cfmse] : Function rc_flush is not in include list
+DEBUG[cfmse] : Function lzma_lzma_encoder_reset is not in include list
+DEBUG[cfmse] : Function is_options_valid is not in include list
+DEBUG[cfmse] : Function rc_reset is not in include list
+DEBUG[cfmse] : Function literal_init is not in include list
+DEBUG[cfmse] : Function length_encoder_reset is not in include list
+DEBUG[cfmse] : Function lzma_lzma_encoder_create is not in include list
+DEBUG[cfmse] : Function set_lz_options is not in include list
+DEBUG[cfmse] : Function lzma_lzma_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma_lzma_encoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_lzma_lclppb_encode is not in include list
+DEBUG[cfmse] : Function is_lclppb_valid is not in include list
+DEBUG[cfmse] : Function lzma_lzma_props_encode is not in include list
+DEBUG[cfmse] : Function unaligned_write32le is not in include list
+DEBUG[cfmse] : Function lzma_mode_is_supported is not in include list
+DEBUG[cfmse] : Function mf_skip is not in include list
+DEBUG[cfmse] : Function rc_bit is not in include list
+DEBUG[cfmse] : Function rc_bittree is not in include list
+DEBUG[cfmse] : Function rc_shift_low is not in include list
+DEBUG[cfmse] : Function literal is not in include list
+DEBUG[cfmse] : Function rep_match is not in include list
+DEBUG[cfmse] : Function match is not in include list
+DEBUG[cfmse] : Function literal_matched is not in include list
+DEBUG[cfmse] : Function length is not in include list
+DEBUG[cfmse] : Function length_update_prices is not in include list
+DEBUG[cfmse] : Function rc_bit_0_price is not in include list
+DEBUG[cfmse] : Function rc_bit_1_price is not in include list
+DEBUG[cfmse] : Function rc_bittree_price is not in include list
+DEBUG[cfmse] : Function rc_bit_price is not in include list
+DEBUG[cfmse] : Function get_pos_slot is not in include list
+DEBUG[cfmse] : Function rc_bittree_reverse is not in include list
+DEBUG[cfmse] : Function rc_direct is not in include list
+DEBUG[cfmse] : Function lzma_encode is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma_preset is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma_optimum_fast is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function mf_skip is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma_optimum_normal is not in include list
+DEBUG[cfmse] : Function fill_distances_prices is not in include list
+DEBUG[cfmse] : Function fill_align_prices is not in include list
+DEBUG[cfmse] : Function helper1 is not in include list
+DEBUG[cfmse] : Function helper2 is not in include list
+DEBUG[cfmse] : Function mf_ptr is not in include list
+DEBUG[cfmse] : Function mf_avail is not in include list
+DEBUG[cfmse] : Function backward is not in include list
+DEBUG[cfmse] : Function rc_bittree_price is not in include list
+DEBUG[cfmse] : Function rc_direct_price is not in include list
+DEBUG[cfmse] : Function get_pos_slot is not in include list
+DEBUG[cfmse] : Function rc_bittree_reverse_price is not in include list
+DEBUG[cfmse] : Function rc_bit_price is not in include list
+DEBUG[cfmse] : Function mf_skip is not in include list
+DEBUG[cfmse] : Function rc_bit_0_price is not in include list
+DEBUG[cfmse] : Function get_literal_price is not in include list
+DEBUG[cfmse] : Function make_literal is not in include list
+DEBUG[cfmse] : Function rc_bit_1_price is not in include list
+DEBUG[cfmse] : Function get_short_rep_price is not in include list
+DEBUG[cfmse] : Function make_short_rep is not in include list
+DEBUG[cfmse] : Function get_pure_rep_price is not in include list
+DEBUG[cfmse] : Function get_len_price is not in include list
+DEBUG[cfmse] : Function get_pos_len_price is not in include list
+DEBUG[cfmse] : Function get_pos_slot_2 is not in include list
+DEBUG[cfmse] : Function get_rep_price is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma_decoder_create is not in include list
+DEBUG[cfmse] : Function lzma_decode is not in include list
+DEBUG[cfmse] : Function lzma_decoder_reset is not in include list
+DEBUG[cfmse] : Function lzma_decoder_uncompressed is not in include list
+DEBUG[cfmse] : Function lzma_lzma_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma_lzma_lclppb_decode is not in include list
+DEBUG[cfmse] : Function lzma_lzma_decoder_memusage_nocheck is not in include list
+DEBUG[cfmse] : Function lzma_lzma_decoder_memusage is not in include list
+DEBUG[cfmse] : Function is_lclppb_valid is not in include list
+DEBUG[cfmse] : Function lzma_lzma_props_decode is not in include list
+DEBUG[cfmse] : Function unaligned_read32le is not in include list
+DEBUG[cfmse] : Function rc_read_init is not in include list
+DEBUG[cfmse] : Function dict_get is not in include list
+DEBUG[cfmse] : Function dict_put is not in include list
+DEBUG[cfmse] : Function dict_is_distance_valid is not in include list
+DEBUG[cfmse] : Function dict_repeat is not in include list
+DEBUG[cfmse] : Function literal_init is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma2_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma2_encoder_init is not in include list
+DEBUG[cfmse] : Function lzma_lzma2_encoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_lzma2_props_encode is not in include list
+DEBUG[cfmse] : Function get_pos_slot is not in include list
+DEBUG[cfmse] : Function lzma2_encode is not in include list
+DEBUG[cfmse] : Function lzma2_encoder_end is not in include list
+DEBUG[cfmse] : Function lzma2_encoder_options_update is not in include list
+DEBUG[cfmse] : Function mf_unencoded is not in include list
+DEBUG[cfmse] : Function lzma2_header_uncompressed is not in include list
+DEBUG[cfmse] : Function lzma2_header_lzma is not in include list
+DEBUG[cfmse] : Function mf_read is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_lzma2_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma2_decoder_init is not in include list
+DEBUG[cfmse] : Function lzma_lzma2_decoder_memusage is not in include list
+DEBUG[cfmse] : Function lzma_lzma2_props_decode is not in include list
+DEBUG[cfmse] : Function lzma2_decode is not in include list
+DEBUG[cfmse] : Function lzma2_decoder_end is not in include list
+DEBUG[cfmse] : Function dict_reset is not in include list
+DEBUG[cfmse] : Function dict_write is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_delta_coder_init is not in include list
+DEBUG[cfmse] : Function delta_coder_end is not in include list
+DEBUG[cfmse] : Function lzma_delta_coder_memusage is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_delta_encoder_init is not in include list
+DEBUG[cfmse] : Function delta_encode is not in include list
+DEBUG[cfmse] : Function delta_encoder_update is not in include list
+DEBUG[cfmse] : Function lzma_delta_props_encode is not in include list
+DEBUG[cfmse] : Function copy_and_encode is not in include list
+DEBUG[cfmse] : Function encode_in_place is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_delta_decoder_init is not in include list
+DEBUG[cfmse] : Function delta_decode is not in include list
+DEBUG[cfmse] : Function lzma_delta_props_decode is not in include list
+DEBUG[cfmse] : Function decode_buffer is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_coder_init is not in include list
+DEBUG[cfmse] : Function simple_code is not in include list
+DEBUG[cfmse] : Function simple_coder_end is not in include list
+DEBUG[cfmse] : Function simple_coder_update is not in include list
+DEBUG[cfmse] : Function copy_or_code is not in include list
+DEBUG[cfmse] : Function call_filter is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_props_size is not in include list
+DEBUG[cfmse] : Function lzma_simple_props_encode is not in include list
+DEBUG[cfmse] : Function unaligned_write32le is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_props_decode is not in include list
+DEBUG[cfmse] : Function unaligned_read32le is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_x86_encoder_init is not in include list
+DEBUG[cfmse] : Function x86_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_x86_decoder_init is not in include list
+DEBUG[cfmse] : Function x86_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_powerpc_encoder_init is not in include list
+DEBUG[cfmse] : Function powerpc_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_powerpc_decoder_init is not in include list
+DEBUG[cfmse] : Function powerpc_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_ia64_encoder_init is not in include list
+DEBUG[cfmse] : Function ia64_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_ia64_decoder_init is not in include list
+DEBUG[cfmse] : Function ia64_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_arm_encoder_init is not in include list
+DEBUG[cfmse] : Function arm_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_arm_decoder_init is not in include list
+DEBUG[cfmse] : Function arm_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_armthumb_encoder_init is not in include list
+DEBUG[cfmse] : Function armthumb_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_armthumb_decoder_init is not in include list
+DEBUG[cfmse] : Function armthumb_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function lzma_simple_sparc_encoder_init is not in include list
+DEBUG[cfmse] : Function sparc_coder_init is not in include list
+DEBUG[cfmse] : Function lzma_simple_sparc_decoder_init is not in include list
+DEBUG[cfmse] : Function sparc_code is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function coder_set_check is not in include list
+DEBUG[cfmse] : Function coder_set_preset is not in include list
+DEBUG[cfmse] : Function forget_filter_chain is not in include list
+DEBUG[cfmse] : Function coder_set_extreme is not in include list
+DEBUG[cfmse] : Function coder_add_filter is not in include list
+DEBUG[cfmse] : Function coder_set_compression_settings is not in include list
+DEBUG[cfmse] : Function memlimit_too_small is not in include list
+DEBUG[cfmse] : Function coder_run is not in include list
+DEBUG[cfmse] : Function coder_init is not in include list
+DEBUG[cfmse] : Function coder_normal is not in include list
+DEBUG[cfmse] : Function coder_passthru is not in include list
+DEBUG[cfmse] : Function is_format_xz is not in include list
+DEBUG[cfmse] : Function is_format_lzma is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function io_init is not in include list
+DEBUG[cfmse] : Function io_no_sparse is not in include list
+DEBUG[cfmse] : Function io_open_src is not in include list
+DEBUG[cfmse] : Function io_open_src_real is not in include list
+DEBUG[cfmse] : Function io_open_dest is not in include list
+DEBUG[cfmse] : Function io_open_dest_real is not in include list
+DEBUG[cfmse] : Function io_close is not in include list
+DEBUG[cfmse] : Function io_write_buf is not in include list
+DEBUG[cfmse] : Function io_close_dest is not in include list
+DEBUG[cfmse] : Function io_close_src is not in include list
+DEBUG[cfmse] : Function io_read is not in include list
+DEBUG[cfmse] : Function io_pread is not in include list
+DEBUG[cfmse] : Function io_write is not in include list
+DEBUG[cfmse] : Function is_sparse is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function hardware_threadlimit_set is not in include list
+DEBUG[cfmse] : Function hardware_threadlimit_get is not in include list
+DEBUG[cfmse] : Function hardware_memlimit_set is not in include list
+DEBUG[cfmse] : Function hardware_memlimit_get is not in include list
+DEBUG[cfmse] : Function hardware_memlimit_show is not in include list
+DEBUG[cfmse] : Function hardware_init is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function list_totals is not in include list
+DEBUG[cfmse] : Function print_totals_robot is not in include list
+DEBUG[cfmse] : Function print_totals_basic is not in include list
+DEBUG[cfmse] : Function print_totals_adv is not in include list
+DEBUG[cfmse] : Function list_file is not in include list
+DEBUG[cfmse] : Function parse_indexes is not in include list
+DEBUG[cfmse] : Function print_info_robot is not in include list
+DEBUG[cfmse] : Function print_info_basic is not in include list
+DEBUG[cfmse] : Function print_info_adv is not in include list
+DEBUG[cfmse] : Function update_totals is not in include list
+DEBUG[cfmse] : Function get_check_names is not in include list
+DEBUG[cfmse] : Function get_ratio is not in include list
+DEBUG[cfmse] : Function putchar is not in include list
+DEBUG[cfmse] : Function print_adv_helper is not in include list
+DEBUG[cfmse] : Function parse_details is not in include list
+DEBUG[cfmse] : Function parse_block_header is not in include list
+DEBUG[cfmse] : Function parse_check_value is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function set_exit_status is not in include list
+DEBUG[cfmse] : Function set_exit_no_warn is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function message_init is not in include list
+DEBUG[cfmse] : Function message_verbosity_increase is not in include list
+DEBUG[cfmse] : Function message_verbosity_decrease is not in include list
+DEBUG[cfmse] : Function message_verbosity_get is not in include list
+DEBUG[cfmse] : Function message_set_files is not in include list
+DEBUG[cfmse] : Function message_filename is not in include list
+DEBUG[cfmse] : Function message_progress_start is not in include list
+DEBUG[cfmse] : Function message_progress_update is not in include list
+DEBUG[cfmse] : Function message_progress_end is not in include list
+DEBUG[cfmse] : Function message is not in include list
+DEBUG[cfmse] : Function vmessage is not in include list
+DEBUG[cfmse] : Function message_warning is not in include list
+DEBUG[cfmse] : Function message_error is not in include list
+DEBUG[cfmse] : Function message_fatal is not in include list
+DEBUG[cfmse] : Function message_bug is not in include list
+DEBUG[cfmse] : Function message_signal_handler is not in include list
+DEBUG[cfmse] : Function message_strm is not in include list
+DEBUG[cfmse] : Function message_mem_needed is not in include list
+DEBUG[cfmse] : Function message_filters_to_str is not in include list
+DEBUG[cfmse] : Function uint32_to_optstr is not in include list
+DEBUG[cfmse] : Function message_filters_show is not in include list
+DEBUG[cfmse] : Function message_try_help is not in include list
+DEBUG[cfmse] : Function message_version is not in include list
+DEBUG[cfmse] : Function message_help is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function options_delta is not in include list
+DEBUG[cfmse] : Function parse_options is not in include list
+DEBUG[cfmse] : Function set_delta is not in include list
+DEBUG[cfmse] : Function options_bcj is not in include list
+DEBUG[cfmse] : Function set_bcj is not in include list
+DEBUG[cfmse] : Function options_lzma is not in include list
+DEBUG[cfmse] : Function set_lzma is not in include list
+DEBUG[cfmse] : Function error_lzma_preset is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function signals_init is not in include list
+DEBUG[cfmse] : Function signals_block is not in include list
+DEBUG[cfmse] : Function signals_unblock is not in include list
+DEBUG[cfmse] : Function signals_exit is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function xrealloc is not in include list
+DEBUG[cfmse] : Function xstrdup is not in include list
+DEBUG[cfmse] : Function str_to_uint64 is not in include list
+DEBUG[cfmse] : Function round_up_to_mib is not in include list
+DEBUG[cfmse] : Function uint64_to_str is not in include list
+DEBUG[cfmse] : Function check_thousand_sep is not in include list
+DEBUG[cfmse] : Function uint64_to_nicestr is not in include list
+DEBUG[cfmse] : Function my_snprintf is not in include list
+DEBUG[cfmse] : Function is_empty_filename is not in include list
+DEBUG[cfmse] : Function is_tty_stdin is not in include list
+DEBUG[cfmse] : Function is_tty_stdout is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_open_stdxxx is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_progname_init is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_exit is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_cpucores is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_mbstr_width is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function tuklib_mbstr_fw is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function spec_mem_init is not in include list
+DEBUG[cfmse] : Function spec_mem_sum is not in include list
+DEBUG[cfmse] : Function spec_mem_load is not in include list
+DEBUG[cfmse] : Function fd_grow is not in include list
+DEBUG[cfmse] : Function spec_uncompress is not in include list
+DEBUG[cfmse] : Function compare_sum is not in include list
+DEBUG[cfmse] : Function print_sum is not in include list
+DEBUG[cfmse] : Function spec_mem_read is not in include list
+DEBUG[cfmse] : Function spec_mem_fread is not in include list
+DEBUG[cfmse] : Function spec_mem_getc is not in include list
+DEBUG[cfmse] : Function spec_mem_ungetc is not in include list
+DEBUG[cfmse] : Function spec_mem_lseek is not in include list
+DEBUG[cfmse] : Function spec_mem_rewind is not in include list
+DEBUG[cfmse] : Function spec_mem_reset is not in include list
+DEBUG[cfmse] : Function spec_mem_get_length is not in include list
+DEBUG[cfmse] : Function spec_mem_fopen is not in include list
+DEBUG[cfmse] : Function spec_mem_open is not in include list
+DEBUG[cfmse] : Function spec_mem_write is not in include list
+DEBUG[cfmse] : Function spec_mem_fwrite is not in include list
+DEBUG[cfmse] : Function spec_mem_putc is not in include list
+DEBUG[cfmse] : Function spec_mem_feof is not in include list
+DEBUG[cfmse] : Function spec_mem_close is not in include list
+DEBUG[cfmse] : Function spec_empty is not in include list
+DEBUG[cfmse] : Function spec_initbufs is not in include list
+DEBUG[cfmse] : Function spec_compress is not in include list
+DEBUG[cfmse] : Function debug_time is not in include list
+DEBUG[cfmse] : Function sum_str_to_hex is not in include list
+DEBUG[cfmse] : Function hex_char_to_num is not in include list
+DEBUG[cfmse] : Function spec_mem_alloc_fds is not in include list
+DEBUG[cfmse] : Function spec_mem_free_fds is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+DEBUG[cfmse] : DCI global : cfmse.dci_gv
+INFO[cfmse]: Running CFMSE ...
+DEBUG[cfmse] : Function sha_init is not in include list
+DEBUG[cfmse] : Function sha_process is not in include list
+DEBUG[cfmse] : Function sortof_strdup is not in include list
+DEBUG[cfmse] : Function sha_compress is not in include list
+DEBUG[cfmse] : Function sha_min is not in include list
+DEBUG[cfmse] : Function sha_done is not in include list
+DEBUG[cfmse] : Function store64 is not in include list
+DEBUG[cfmse] : Function load64 is not in include list
+DEBUG[cfmse] : Function Gamma1 is not in include list
+DEBUG[cfmse] : Function Gamma0 is not in include list
+DEBUG[cfmse] : Function Sigma1 is not in include list
+DEBUG[cfmse] : Function Ch is not in include list
+DEBUG[cfmse] : Function Sigma0 is not in include list
+DEBUG[cfmse] : Function Maj is not in include list
+DEBUG[cfmse] : Function Rot is not in include list
+DEBUG[cfmse] : Function Sh is not in include list
+INFO[cfmse]: Number of successful applications of CFMSE : 0
+INFO[cfmse]: Number of if-then merges : 0
+INFO[cfmse]: Number of if-then-else merges : 0
+INFO[cfmse]: Number of select instructions added : 0
+clang-14: warning: argument unused during compilation: '-mllvm -force-cfmse' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-mllvm -include-function-names=bt_find_func,bt_skip_func,lzma_mf_bt4_find' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-mllvm -cfmse-unsafe-dci=0' [-Wunused-command-line-argument]

@@ -1,0 +1,140 @@
+
+MCF SPEC CPU version 1.11
+Copyright (c) 1998-2000 Zuse Institut Berlin (ZIB)
+Copyright (c) 2000-2002 Andreas Loebel & ZIB
+Copyright (c) 2003-2005 Andreas Loebel
+Copyright (c) 2006-2010 Dres. Loebel, Borndoerfer & Weider GbR (LBW)
+
+single threaded
+nodes                      : 15000
+active arcs                : 162202
+simplex iterations         : 107102
+objective value            : 14286213527
+new implicit arcs          : 4000000
+active arcs                : 4162202
+simplex iterations         : 208841
+objective value            : 12333008348
+erased arcs                : 3992689
+new implicit arcs          : 8992689
+active arcs                : 9162202
+simplex iterations         : 446155
+objective value            : 11841091259
+erased arcs                : 8988776
+new implicit arcs          : 8988776
+active arcs                : 9162202
+simplex iterations         : 785047
+objective value            : 11246204075
+erased arcs                : 8981590
+new implicit arcs          : 8981590
+active arcs                : 9162202
+simplex iterations         : 977380
+objective value            : 10975564494
+erased arcs                : 8981146
+new implicit arcs          : 8981146
+active arcs                : 9162202
+simplex iterations         : 1288242
+objective value            : 10842526040
+erased arcs                : 8976235
+new implicit arcs          : 8976235
+active arcs                : 9162202
+simplex iterations         : 1408384
+objective value            : 10782113290
+erased arcs                : 8976013
+new implicit arcs          : 8976013
+active arcs                : 9162202
+simplex iterations         : 1562211
+objective value            : 10770781860
+erased arcs                : 8973694
+new implicit arcs          : 8973694
+active arcs                : 9162202
+simplex iterations         : 1619212
+objective value            : 10750580200
+erased arcs                : 8973438
+new implicit arcs          : 7967461
+active arcs                : 8156225
+simplex iterations         : 1664383
+objective value            : 10740439290
+erased arcs                : 7967320
+new implicit arcs          : 4631
+active arcs                : 193536
+simplex iterations         : 1665961
+objective value            : 10710449610
+erased arcs                : 5392
+new implicit arcs          : 3251092
+active arcs                : 3439236
+simplex iterations         : 1669775
+objective value            : 10680442801
+erased arcs                : 3250837
+new implicit arcs          : 6009
+active arcs                : 194408
+simplex iterations         : 1670224
+objective value            : 10670440310
+erased arcs                : 6158
+new implicit arcs          : 1163473
+active arcs                : 1351723
+simplex iterations         : 1672239
+objective value            : 10660439680
+erased arcs                : 1163741
+new implicit arcs          : 2010041
+active arcs                : 2198023
+simplex iterations         : 1673881
+objective value            : 10660439290
+erased arcs                : 2009012
+new implicit arcs          : 5300
+active arcs                : 194311
+simplex iterations         : 1673937
+objective value            : 10660439290
+erased arcs                : 5292
+new implicit arcs          : 726
+active arcs                : 189745
+simplex iterations         : 1673967
+objective value            : 10660439290
+erased arcs                : 726
+new implicit arcs          : 630
+active arcs                : 189649
+simplex iterations         : 1674367
+objective value            : 10650447870
+erased arcs                : 986
+new implicit arcs          : 4682178
+active arcs                : 4870841
+simplex iterations         : 1675868
+objective value            : 10650439290
+erased arcs                : 4682454
+new implicit arcs          : 3463
+active arcs                : 191850
+simplex iterations         : 1675899
+objective value            : 10650439290
+erased arcs                : 3460
+new implicit arcs          : 1955
+active arcs                : 190345
+simplex iterations         : 1676434
+objective value            : 10640439350
+erased arcs                : 2362
+new implicit arcs          : 6044541
+active arcs                : 6232524
+simplex iterations         : 1678150
+objective value            : 10640439290
+erased arcs                : 6043430
+new implicit arcs          : 7771
+active arcs                : 196865
+simplex iterations         : 1678235
+objective value            : 10640439290
+erased arcs                : 7765
+new implicit arcs          : 5295
+active arcs                : 194395
+simplex iterations         : 1678678
+objective value            : 10630440070
+erased arcs                : 5548
+new implicit arcs          : 4486746
+active arcs                : 4675593
+simplex iterations         : 1680149
+objective value            : 10630439290
+erased arcs                : 4487013
+new implicit arcs          : 17469
+active arcs                : 206049
+simplex iterations         : 1680245
+objective value            : 10630439290
+erased arcs                : 17451
+checksum                   : 10630439290
+runtime = 322 seconds
+done

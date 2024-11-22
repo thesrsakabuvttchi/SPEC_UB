@@ -1,0 +1,9 @@
+*.txt
+*.data
+*.csv 
+*.sgf
+*.out
+*.err
+*.xz
+*.o 
+*.yuv

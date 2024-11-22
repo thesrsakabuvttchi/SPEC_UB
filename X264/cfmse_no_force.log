@@ -1,0 +1,1822 @@
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+for.body:                                         ; preds = %for.cond
+  %0 = load i32, i32* %enc_dc, align 4, !sourceFile !3, !mergedLineNum !4
+  %1 = load i16, i16* %sums.addr.0, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv = zext i16 %1 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub = sub nsw i32 %0, %conv, !sourceFile !3, !mergedLineNum !4
+  %call = call i32 @abs(i32 %sub) #5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx2 = getelementptr inbounds i32, i32* %enc_dc, i64 1, !sourceFile !3, !mergedLineNum !4
+  %2 = load i32, i32* %arrayidx2, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx3 = getelementptr inbounds i16, i16* %sums.addr.0, i64 8, !sourceFile !3, !mergedLineNum !4
+  %3 = load i16, i16* %arrayidx3, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv4 = zext i16 %3 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub5 = sub nsw i32 %2, %conv4, !sourceFile !3, !mergedLineNum !4
+  %call6 = call i32 @abs(i32 %sub5) #5, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %call, %call6, !sourceFile !3, !mergedLineNum !4
+  %arrayidx7 = getelementptr inbounds i32, i32* %enc_dc, i64 2, !sourceFile !3, !mergedLineNum !4
+  %4 = load i32, i32* %arrayidx7, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %delta to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx8 = getelementptr inbounds i16, i16* %sums.addr.0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %5 = load i16, i16* %arrayidx8, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv9 = zext i16 %5 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub10 = sub nsw i32 %4, %conv9, !sourceFile !3, !mergedLineNum !4
+  %call11 = call i32 @abs(i32 %sub10) #5, !sourceFile !3, !mergedLineNum !4
+  %add12 = add nsw i32 %add, %call11, !sourceFile !3, !mergedLineNum !4
+  %arrayidx13 = getelementptr inbounds i32, i32* %enc_dc, i64 3, !sourceFile !3, !mergedLineNum !4
+  %6 = load i32, i32* %arrayidx13, align 4, !sourceFile !3, !mergedLineNum !4
+  %add14 = add nsw i32 %delta, 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom15 = sext i32 %add14 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx16 = getelementptr inbounds i16, i16* %sums.addr.0, i64 %idxprom15, !sourceFile !3, !mergedLineNum !4
+  %7 = load i16, i16* %arrayidx16, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv17 = zext i16 %7 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub18 = sub nsw i32 %6, %conv17, !sourceFile !3, !mergedLineNum !4
+  %call19 = call i32 @abs(i32 %sub18) #5, !sourceFile !3, !mergedLineNum !4
+  %add20 = add nsw i32 %add12, %call19, !sourceFile !3, !mergedLineNum !4
+  %idxprom21 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx22 = getelementptr inbounds i16, i16* %cost_mvx, i64 %idxprom21, !sourceFile !3, !mergedLineNum !4
+  %8 = load i16, i16* %arrayidx22, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv23 = zext i16 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %add24 = add nsw i32 %add20, %conv23, !sourceFile !3, !mergedLineNum !4
+  %cmp25 = icmp slt i32 %add24, %thresh, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp25, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %0 = load i32, i32* %enc_dc, align 4, !sourceFile !3, !mergedLineNum !4
+  %1 = load i16, i16* %sums.addr.0, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv = zext i16 %1 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub = sub nsw i32 %0, %conv, !sourceFile !3, !mergedLineNum !4
+  %call = call i32 @abs(i32 %sub) #5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx2 = getelementptr inbounds i32, i32* %enc_dc, i64 1, !sourceFile !3, !mergedLineNum !4
+  %2 = load i32, i32* %arrayidx2, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %delta to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx3 = getelementptr inbounds i16, i16* %sums.addr.0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %3 = load i16, i16* %arrayidx3, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv4 = zext i16 %3 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub5 = sub nsw i32 %2, %conv4, !sourceFile !3, !mergedLineNum !4
+  %call6 = call i32 @abs(i32 %sub5) #5, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %call, %call6, !sourceFile !3, !mergedLineNum !4
+  %idxprom7 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx8 = getelementptr inbounds i16, i16* %cost_mvx, i64 %idxprom7, !sourceFile !3, !mergedLineNum !4
+  %4 = load i16, i16* %arrayidx8, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv9 = zext i16 %4 to i32, !sourceFile !3, !mergedLineNum !4
+  %add10 = add nsw i32 %add, %conv9, !sourceFile !3, !mergedLineNum !4
+  %cmp11 = icmp slt i32 %add10, %thresh, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp11, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %0 = load i32, i32* %enc_dc, align 4, !sourceFile !3, !mergedLineNum !4
+  %1 = load i16, i16* %sums.addr.0, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv = zext i16 %1 to i32, !sourceFile !3, !mergedLineNum !4
+  %sub = sub nsw i32 %0, %conv, !sourceFile !3, !mergedLineNum !4
+  %call = call i32 @abs(i32 %sub) #5, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx2 = getelementptr inbounds i16, i16* %cost_mvx, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %2 = load i16, i16* %arrayidx2, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv3 = zext i16 %2 to i32, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %call, %conv3, !sourceFile !3, !mergedLineNum !4
+  %cmp4 = icmp slt i32 %add, %thresh, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp4, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+if.end646:                                        ; preds = %if.else627, %if.then575
+  %96 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and651 = and i32 %96, 4, !sourceFile !3, !mergedLineNum !4
+  %tobool652 = icmp ne i32 %and651, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool652, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end189:                                        ; preds = %if.then138, %for.body
+  %33 = load i32, i32* %i_neighbour, align 8, !sourceFile !3, !mergedLineNum !4
+  %and193 = and i32 %33, 1, !sourceFile !3, !mergedLineNum !4
+  %tobool194 = icmp ne i32 %and193, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool194, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+cond.end111:                                      ; preds = %merged.bb216
+  store i32 %moved.sel218, i32* %i_frame_reference104, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_deblocking_filter_alphac0114 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 22, !sourceFile !3, !mergedLineNum !4
+  store i32 -1, i32* %i_deblocking_filter_alphac0114, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_deblocking_filter_beta115 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 23, !sourceFile !3, !mergedLineNum !4
+  store i32 -1, i32* %i_deblocking_filter_beta115, align 4, !sourceFile !3, !mergedLineNum !4
+  %analyse116 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 41, !sourceFile !3, !mergedLineNum !4
+  %f_psy_trellis117 = getelementptr inbounds %struct.anon.0, %struct.anon.0* %analyse116, i32 0, i32 19, !sourceFile !3, !mergedLineNum !4
+  store float 0x3FC99999A0000000, float* %f_psy_trellis117, align 4, !sourceFile !3, !mergedLineNum !4
+  %rc118 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 42, !sourceFile !3, !mergedLineNum !4
+  %f_aq_strength119 = getelementptr inbounds %struct.anon.1, %struct.anon.1* %rc118, i32 0, i32 15, !sourceFile !3, !mergedLineNum !4
+  store float 0x3FF4CCCCC0000000, float* %f_aq_strength119, align 4, !sourceFile !3, !mergedLineNum !4
+  %inter = getelementptr inbounds %struct.anon.0, %struct.anon.0* %analyse116, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %3 = load i32, i32* %inter, align 4, !sourceFile !3, !mergedLineNum !4
+  %and = and i32 %3, 16, !sourceFile !3, !mergedLineNum !4
+  %tobool121 = icmp ne i32 %and, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool121, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.end:                                          ; preds = %for.cond50, %land.rhs
+  %7 = load i32, i32* %flags, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i32, i32* %cpu, align 8, !sourceFile !3, !mergedLineNum !4
+  %or = or i32 %8, %7, !sourceFile !3, !mergedLineNum !4
+  store i32 %or, i32* %cpu, align 8, !sourceFile !3, !mergedLineNum !4
+  %9 = load i32, i32* %flags, align 4, !sourceFile !3, !mergedLineNum !4
+  %tobool67 = icmp ne i32 %9, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool67, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+do.body:                                          ; preds = %land.rhs, %entry
+  %str.addr.0 = phi i8* [ %str, %entry ], [ %incdec.ptr, %land.rhs ], !sourceFile !3, !mergedLineNum !4
+  %retval.0 = phi i32 [ undef, %entry ], [ %retval.1, %land.rhs ], !sourceFile !3, !mergedLineNum !4
+  %i.0 = phi i32 [ 0, %entry ], [ %i.1, %land.rhs ], !sourceFile !3, !mergedLineNum !4
+  %0 = bitcast i32* %coef to i8*, !sourceFile !3, !mergedLineNum !4
+  call void @llvm.lifetime.start.p0i8(i64 4, i8* %0) #14, !sourceFile !3, !mergedLineNum !4
+  %call = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %str.addr.0, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.49, i64 0, i64 0), i32* %coef) #14, !sourceFile !3, !mergedLineNum !4
+  %tobool = icmp eq i32 %call, 0, !sourceFile !3, !mergedLineNum !4
+  %1 = load i32, i32* %coef, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp = icmp slt i32 %1, 1, !sourceFile !3, !mergedLineNum !4
+  %or.cond = select i1 %tobool, i1 true, i1 %cmp, !sourceFile !3, !mergedLineNum !4
+  %cmp2 = icmp sgt i32 %1, 255, !sourceFile !3, !mergedLineNum !4
+  %or.cond12 = select i1 %or.cond, i1 true, i1 %cmp2, !sourceFile !3, !mergedLineNum !4
+  br i1 %or.cond12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true:                                    ; preds = %while.body
+  %4 = load i8, i8* %src.0, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv14 = zext i8 %4 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp15 = icmp sle i32 %conv14, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp15, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+while.body:                                       ; preds = %while.cond
+  %cmp12 = icmp eq i32 %i_count.0, 2, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+if.then36:                                        ; preds = %if.then
+  %sub37 = sub nsw i32 %conv, %conv8, !sourceFile !3, !mergedLineNum !4
+  %call38 = call i32 @abs(i32 %sub37) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp39 = icmp slt i32 %call38, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp39, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then36:                                        ; preds = %if.then
+  %sub37 = sub nsw i32 %conv, %conv8, !sourceFile !3, !mergedLineNum !4
+  %call38 = call i32 @abs(i32 %sub37) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp39 = icmp slt i32 %call38, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp39, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end:                                           ; preds = %merged.bb
+  %sub89 = sub nsw i32 %conv20, %conv12, !sourceFile !3, !mergedLineNum !4
+  %call90 = call i32 @abs(i32 %sub89) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp91 = icmp slt i32 %call90, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp91, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end:                                           ; preds = %merged.bb
+  %sub89 = sub nsw i32 %conv20, %conv12, !sourceFile !3, !mergedLineNum !4
+  %call90 = call i32 @abs(i32 %sub89) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp91 = icmp slt i32 %call90, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp91, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true19:                                  ; preds = %land.lhs.true
+  %sub20 = sub nsw i32 %conv12, %conv8, !sourceFile !3, !mergedLineNum !4
+  %call21 = call i32 @abs(i32 %sub20) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp22 = icmp slt i32 %call21, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp22, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true19:                                  ; preds = %land.lhs.true
+  %sub20 = sub nsw i32 %conv12, %conv8, !sourceFile !3, !mergedLineNum !4
+  %call21 = call i32 @abs(i32 %sub20) #7, !sourceFile !3, !mergedLineNum !4
+  %cmp22 = icmp slt i32 %call21, %beta, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp22, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+for.body138:                                      ; preds = %for.cond134
+  %idxprom139 = sext i32 %j133.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx140 = getelementptr inbounds %struct.trellis_node_t, %struct.trellis_node_t* %nodes_cur.0, i64 %idxprom139, !sourceFile !3, !mergedLineNum !4
+  %score141 = getelementptr inbounds %struct.trellis_node_t, %struct.trellis_node_t* %arrayidx140, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %18 = load i64, i64* %score141, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp142 = icmp ne i64 %18, 1125899906842624, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp142, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body138:                                      ; preds = %for.cond134
+  %idxprom139 = sext i32 %j133.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx140 = getelementptr inbounds %struct.trellis_node_t, %struct.trellis_node_t* %nodes_cur.0, i64 %idxprom139, !sourceFile !3, !mergedLineNum !4
+  %score141 = getelementptr inbounds %struct.trellis_node_t, %struct.trellis_node_t* %arrayidx140, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %18 = load i64, i64* %score141, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp142 = icmp ne i64 %18, 1125899906842624, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp142, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then243:                                       ; preds = %for.body233
+  %i_sub_partition = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 55, !sourceFile !3, !mergedLineNum !4
+  %arrayidx251 = getelementptr inbounds [4 x i8], [4 x i8]* %i_sub_partition, i64 0, i64 %idxprom235, !sourceFile !3, !mergedLineNum !4
+  store i8 0, i8* %arrayidx251, align 1, !sourceFile !3, !mergedLineNum !4
+  call void @x264_mb_analyse_inter_p8x4(%struct.x264_t* %h, %struct.x264_mb_analysis_t* %analysis, i32 %i228.0), !sourceFile !3, !mergedLineNum !4
+  %i_cost8x4 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %arrayidx254 = getelementptr inbounds [4 x i32], [4 x i32]* %i_cost8x4, i64 0, i64 %idxprom235, !sourceFile !3, !mergedLineNum !4
+  %57 = load i32, i32* %arrayidx254, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp255 = icmp slt i32 %57, %55, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp255, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end266:                                        ; preds = %merged.bb
+  call void @x264_mb_analyse_inter_p4x8(%struct.x264_t* %h, %struct.x264_mb_analysis_t* %analysis, i32 %i228.0), !sourceFile !3, !mergedLineNum !4
+  %i_cost4x8 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %arrayidx269 = getelementptr inbounds [4 x i32], [4 x i32]* %i_cost4x8, i64 0, i64 %idxprom235, !sourceFile !3, !mergedLineNum !4
+  %58 = load i32, i32* %arrayidx269, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp270 = icmp slt i32 %58, %moved.sel, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp270, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body1288:                                     ; preds = %for.cond1284
+  %i_satd8x81289 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %analysis, i32 0, i32 28, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1290 = getelementptr inbounds [3 x [4 x i32]], [3 x [4 x i32]]* %i_satd8x81289, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %mul1291 = mul nsw i32 %i1283.0, 2, !sourceFile !3, !mergedLineNum !4
+  %idxprom1292 = sext i32 %mul1291 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1293 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1290, i64 0, i64 %idxprom1292, !sourceFile !3, !mergedLineNum !4
+  %234 = load i32, i32* %arrayidx1293, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1297 = add nsw i32 %mul1291, 1, !sourceFile !3, !mergedLineNum !4
+  %idxprom1298 = sext i32 %add1297 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1299 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1290, i64 0, i64 %idxprom1298, !sourceFile !3, !mergedLineNum !4
+  %235 = load i32, i32* %arrayidx1299, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1300 = add nsw i32 %234, %235, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1302 = getelementptr inbounds [3 x [4 x i32]], [3 x [4 x i32]]* %i_satd8x81289, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1305 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1302, i64 0, i64 %idxprom1292, !sourceFile !3, !mergedLineNum !4
+  %236 = load i32, i32* %arrayidx1305, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1311 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1302, i64 0, i64 %idxprom1298, !sourceFile !3, !mergedLineNum !4
+  %237 = load i32, i32* %arrayidx1311, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1312 = add nsw i32 %236, %237, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1314 = getelementptr inbounds [3 x [4 x i32]], [3 x [4 x i32]]* %i_satd8x81289, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1317 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1314, i64 0, i64 %idxprom1292, !sourceFile !3, !mergedLineNum !4
+  %238 = load i32, i32* %arrayidx1317, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1323 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1314, i64 0, i64 %idxprom1298, !sourceFile !3, !mergedLineNum !4
+  %239 = load i32, i32* %arrayidx1323, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1324 = add nsw i32 %238, %239, !sourceFile !3, !mergedLineNum !4
+  %me8x81326 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l01217, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1329 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81326, i64 0, i64 %idxprom1292, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1330 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1329, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %240 = load i32, i32* %cost_mv1330, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1336 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1329, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %241 = load i32, i32* %i_ref_cost1336, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1337 = add nsw i32 %240, %241, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1343 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81326, i64 0, i64 %idxprom1298, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1344 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1343, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %242 = load i32, i32* %cost_mv1344, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1345 = add nsw i32 %add1337, %242, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1352 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1343, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %243 = load i32, i32* %i_ref_cost1352, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1353 = add nsw i32 %add1345, %243, !sourceFile !3, !mergedLineNum !4
+  %add1354 = add nsw i32 %add1353, 1, !sourceFile !3, !mergedLineNum !4
+  %shr1355 = ashr i32 %add1354, 1, !sourceFile !3, !mergedLineNum !4
+  %me8x81357 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l1, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1360 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81357, i64 0, i64 %idxprom1292, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1361 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1360, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %244 = load i32, i32* %cost_mv1361, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1367 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1360, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %245 = load i32, i32* %i_ref_cost1367, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1368 = add nsw i32 %244, %245, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1374 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81357, i64 0, i64 %idxprom1298, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1375 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1374, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %246 = load i32, i32* %cost_mv1375, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1376 = add nsw i32 %add1368, %246, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1383 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1374, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %247 = load i32, i32* %i_ref_cost1383, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1384 = add nsw i32 %add1376, %247, !sourceFile !3, !mergedLineNum !4
+  %add1385 = add nsw i32 %add1384, 1, !sourceFile !3, !mergedLineNum !4
+  %shr1386 = ashr i32 %add1385, 1, !sourceFile !3, !mergedLineNum !4
+  %add1387 = add nsw i32 %add1300, %shr1355, !sourceFile !3, !mergedLineNum !4
+  %cmp1388 = icmp slt i32 %add1387, 268435456, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1388, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end1394:                                       ; preds = %merged.bb3048
+  %add1395 = add nsw i32 %add1312, %shr1386, !sourceFile !3, !mergedLineNum !4
+  %cmp1396 = icmp slt i32 %add1395, %moved.sel3051, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1396, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end1402:                                       ; preds = %merged.bb3053
+  %add1403 = add nsw i32 %add1324, %shr1355, !sourceFile !3, !mergedLineNum !4
+  %add1404 = add nsw i32 %add1403, %shr1386, !sourceFile !3, !mergedLineNum !4
+  %cmp1405 = icmp slt i32 %add1404, %moved.sel3056, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1405, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end1412:                                       ; preds = %merged.bb3058
+  %i_cost_est16x81413 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %analysis, i32 0, i32 29, !sourceFile !3, !mergedLineNum !4
+  %idxprom1414 = sext i32 %i1283.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1415 = getelementptr inbounds [2 x i32], [2 x i32]* %i_cost_est16x81413, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  store i32 %moved.sel3061, i32* %arrayidx1415, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1419 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1290, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  %248 = load i32, i32* %arrayidx1419, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1422 = add nsw i32 %i1283.0, 2, !sourceFile !3, !mergedLineNum !4
+  %idxprom1423 = sext i32 %add1422 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1424 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1290, i64 0, i64 %idxprom1423, !sourceFile !3, !mergedLineNum !4
+  %249 = load i32, i32* %arrayidx1424, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1425 = add nsw i32 %248, %249, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1429 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1302, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  %250 = load i32, i32* %arrayidx1429, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1434 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1302, i64 0, i64 %idxprom1423, !sourceFile !3, !mergedLineNum !4
+  %251 = load i32, i32* %arrayidx1434, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1435 = add nsw i32 %250, %251, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1439 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1314, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  %252 = load i32, i32* %arrayidx1439, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1444 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx1314, i64 0, i64 %idxprom1423, !sourceFile !3, !mergedLineNum !4
+  %253 = load i32, i32* %arrayidx1444, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1445 = add nsw i32 %252, %253, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1449 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81326, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1450 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1449, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %254 = load i32, i32* %cost_mv1450, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1455 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1449, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %255 = load i32, i32* %i_ref_cost1455, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1456 = add nsw i32 %254, %255, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1461 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81326, i64 0, i64 %idxprom1423, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1462 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1461, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %256 = load i32, i32* %cost_mv1462, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1463 = add nsw i32 %add1456, %256, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1469 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1461, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %257 = load i32, i32* %i_ref_cost1469, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1470 = add nsw i32 %add1463, %257, !sourceFile !3, !mergedLineNum !4
+  %add1471 = add nsw i32 %add1470, 1, !sourceFile !3, !mergedLineNum !4
+  %shr1472 = ashr i32 %add1471, 1, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1476 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81357, i64 0, i64 %idxprom1414, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1477 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1476, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %258 = load i32, i32* %cost_mv1477, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1482 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1476, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %259 = load i32, i32* %i_ref_cost1482, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1483 = add nsw i32 %258, %259, !sourceFile !3, !mergedLineNum !4
+  %arrayidx1488 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x81357, i64 0, i64 %idxprom1423, !sourceFile !3, !mergedLineNum !4
+  %cost_mv1489 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1488, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %260 = load i32, i32* %cost_mv1489, align 4, !sourceFile !3, !mergedLineNum !4
+  %add1490 = add nsw i32 %add1483, %260, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost1496 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx1488, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %261 = load i32, i32* %i_ref_cost1496, align 16, !sourceFile !3, !mergedLineNum !4
+  %add1497 = add nsw i32 %add1490, %261, !sourceFile !3, !mergedLineNum !4
+  %add1498 = add nsw i32 %add1497, 1, !sourceFile !3, !mergedLineNum !4
+  %shr1499 = ashr i32 %add1498, 1, !sourceFile !3, !mergedLineNum !4
+  %add1500 = add nsw i32 %add1425, %shr1472, !sourceFile !3, !mergedLineNum !4
+  %cmp1501 = icmp slt i32 %add1500, 268435456, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1501, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end1507:                                       ; preds = %merged.bb3063
+  %add1508 = add nsw i32 %add1435, %shr1499, !sourceFile !3, !mergedLineNum !4
+  %cmp1509 = icmp slt i32 %add1508, %moved.sel3066, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1509, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end1515:                                       ; preds = %merged.bb3068
+  %add1516 = add nsw i32 %add1445, %shr1472, !sourceFile !3, !mergedLineNum !4
+  %add1517 = add nsw i32 %add1516, %shr1499, !sourceFile !3, !mergedLineNum !4
+  %cmp1518 = icmp slt i32 %add1517, %moved.sel3071, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp1518, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %13 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %call23 = call i32 @bs_size_ue(i32 %i.0), !sourceFile !3, !mergedLineNum !4
+  %mul = mul nsw i32 %13, %call23, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx25 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i16x16_dir, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %arrayidx25, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %14, %mul, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %arrayidx25, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i16x16 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %i_satd_i16x16, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp26 = icmp slt i32 %add, %15, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp26, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %13 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %call23 = call i32 @bs_size_ue(i32 %i.0), !sourceFile !3, !mergedLineNum !4
+  %mul = mul nsw i32 %13, %call23, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx25 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i16x16_dir, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %arrayidx25, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %14, %mul, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %arrayidx25, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i16x16 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %i_satd_i16x16, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp26 = icmp slt i32 %add, %15, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp26, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end44:                                         ; preds = %if.else40, %if.then39
+  %mbcmp46 = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx47 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp46, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %19 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx47, align 8, !sourceFile !3, !mergedLineNum !4
+  %call48 = call i32 %19(i8* %4, i32 32, i8* %3, i32 16), !sourceFile !3, !mergedLineNum !4
+  %i_lambda49 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %20 = load i32, i32* %i_lambda49, align 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom50 = sext i32 %conv31 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx51 = getelementptr inbounds [7 x i8], [7 x i8]* @x264_mb_pred_mode16x16_fix, i64 0, i64 %idxprom50, !sourceFile !3, !mergedLineNum !4
+  %21 = load i8, i8* %arrayidx51, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv52 = zext i8 %21 to i32, !sourceFile !3, !mergedLineNum !4
+  %call53 = call i32 @bs_size_ue(i32 %conv52), !sourceFile !3, !mergedLineNum !4
+  %mul54 = mul nsw i32 %20, %call53, !sourceFile !3, !mergedLineNum !4
+  %add55 = add nsw i32 %call48, %mul54, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i16x1656 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %22 = load i32, i32* %i_satd_i16x1656, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp57 = icmp slt i32 %add55, %22, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp57, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end44:                                         ; preds = %if.else40, %if.then39
+  %mbcmp46 = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx47 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp46, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %19 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx47, align 8, !sourceFile !3, !mergedLineNum !4
+  %call48 = call i32 %19(i8* %4, i32 32, i8* %3, i32 16), !sourceFile !3, !mergedLineNum !4
+  %i_lambda49 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %20 = load i32, i32* %i_lambda49, align 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom50 = sext i32 %conv31 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx51 = getelementptr inbounds [7 x i8], [7 x i8]* @x264_mb_pred_mode16x16_fix, i64 0, i64 %idxprom50, !sourceFile !3, !mergedLineNum !4
+  %21 = load i8, i8* %arrayidx51, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv52 = zext i8 %21 to i32, !sourceFile !3, !mergedLineNum !4
+  %call53 = call i32 @bs_size_ue(i32 %conv52), !sourceFile !3, !mergedLineNum !4
+  %mul54 = mul nsw i32 %20, %call53, !sourceFile !3, !mergedLineNum !4
+  %add55 = add nsw i32 %call48, %mul54, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i16x1656 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %22 = load i32, i32* %i_satd_i16x1656, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp57 = icmp slt i32 %add55, %22, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp57, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body193:                                      ; preds = %for.cond189
+  %idxprom195 = sext i32 %i188.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx196 = getelementptr inbounds [9 x i32], [9 x i32]* %satd179, i64 0, i64 %idxprom195, !sourceFile !3, !mergedLineNum !4
+  %52 = load i32, i32* %arrayidx196, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i8x8_dir = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 14, !sourceFile !3, !mergedLineNum !4
+  %arrayidx198 = getelementptr inbounds [12 x [4 x i32]], [12 x [4 x i32]]* %i_satd_i8x8_dir, i64 0, i64 %idxprom195, !sourceFile !3, !mergedLineNum !4
+  %arrayidx200 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx198, i64 0, i64 %idxprom164, !sourceFile !3, !mergedLineNum !4
+  store i32 %52, i32* %arrayidx200, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp201 = icmp slt i32 %52, %i_best.0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp201, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end248:                                        ; preds = %merged.bb1051
+  %cmp249 = icmp slt i32 %moved.sel1054, %i_best.3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp249, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.cond457:                                      ; preds = %for.inc619, %if.end456
+  %i_cost399.1 = phi i32 [ %i_cost399.0, %if.end456 ], [ %add588, %for.inc619 ], !sourceFile !3, !mergedLineNum !4
+  %idx.1 = phi i32 [ 0, %if.end456 ], [ %inc620, %for.inc619 ], !sourceFile !3, !mergedLineNum !4
+  %idxprom459 = sext i32 %idx.1 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx460 = getelementptr inbounds [16 x i8], [16 x i8]* @block_idx_xy_fenc, i64 0, i64 %idxprom459, !sourceFile !3, !mergedLineNum !4
+  %97 = load i8, i8* %arrayidx460, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv461 = zext i8 %97 to i32, !sourceFile !3, !mergedLineNum !4
+  %idx.ext462 = sext i32 %conv461 to i64, !sourceFile !3, !mergedLineNum !4
+  %add.ptr463 = getelementptr inbounds i8, i8* %3, i64 %idx.ext462, !sourceFile !3, !mergedLineNum !4
+  %arrayidx466 = getelementptr inbounds [16 x i16], [16 x i16]* @block_idx_xy_fdec, i64 0, i64 %idxprom459, !sourceFile !3, !mergedLineNum !4
+  %98 = load i16, i16* %arrayidx466, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv467 = zext i16 %98 to i32, !sourceFile !3, !mergedLineNum !4
+  %idx.ext468 = sext i32 %conv467 to i64, !sourceFile !3, !mergedLineNum !4
+  %add.ptr469 = getelementptr inbounds i8, i8* %4, i64 %idx.ext468, !sourceFile !3, !mergedLineNum !4
+  %call472 = call i32 @x264_mb_predict_intra4x4_mode(%struct.x264_t* %h, i32 %idx.1), !sourceFile !3, !mergedLineNum !4
+  %i_neighbour4 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 26, !sourceFile !3, !mergedLineNum !4
+  %arrayidx475 = getelementptr inbounds [16 x i32], [16 x i32]* %i_neighbour4, i64 0, i64 %idxprom459, !sourceFile !3, !mergedLineNum !4
+  %99 = load i32, i32* %arrayidx475, align 4, !sourceFile !3, !mergedLineNum !4
+  %call476 = call i8* @predict_4x4_mode_available(i32 %99), !sourceFile !3, !mergedLineNum !4
+  %100 = load i32, i32* %arrayidx475, align 4, !sourceFile !3, !mergedLineNum !4
+  %and481 = and i32 %100, 6, !sourceFile !3, !mergedLineNum !4
+  %cmp482 = icmp eq i32 %and481, 2, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp482, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body512:                                      ; preds = %for.cond508
+  %idxprom513 = sext i32 %i507.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx514 = getelementptr inbounds [9 x i32], [9 x i32]* %satd498, i64 0, i64 %idxprom513, !sourceFile !3, !mergedLineNum !4
+  %106 = load i32, i32* %arrayidx514, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp515 = icmp slt i32 %106, %i_best470.0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp515, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end569:                                        ; preds = %if.then558, %if.end547
+  %i_satd537.0 = phi i32 [ %sub561, %if.then558 ], [ %call551, %if.end547 ], !sourceFile !3, !mergedLineNum !4
+  %cmp570 = icmp slt i32 %i_satd537.0, %i_best470.3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp570, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end:                                           ; preds = %lor.lhs.false
+  %i_intra16x16_pred_mode = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 59, !sourceFile !3, !mergedLineNum !4
+  store i32 %conv5, i32* %i_intra16x16_pred_mode, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_lambda2 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %8 = load i32, i32* %i_lambda2, align 4, !sourceFile !3, !mergedLineNum !4
+  %call18 = call i32 @x264_rd_cost_mb(%struct.x264_t* %h, i32 %8), !sourceFile !3, !mergedLineNum !4
+  %conv19 = sext i32 %call18 to i64, !sourceFile !3, !mergedLineNum !4
+  %cmp20 = icmp ult i64 %conv19, %i_best.0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp20, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true:                                    ; preds = %for.body42
+  %i_predict8x8chroma = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 21, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %i_predict8x8chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp49 = icmp ne i32 %conv39, %15, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp49, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end91:                                         ; preds = %if.else, %if.then77
+  %27 = load i32, i32* %i_cbp_chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp94 = icmp ne i32 %27, 0, !sourceFile !3, !mergedLineNum !4
+  %conv95 = zext i1 %cmp94 to i32, !sourceFile !3, !mergedLineNum !4
+  %call96 = call i64 @x264_rd_cost_i8x8_chroma(%struct.x264_t* %h, i32 %18, i32 %conv75, i32 %conv95), !sourceFile !3, !mergedLineNum !4
+  %cmp97 = icmp ult i64 %call96, %i_best.3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp97, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body123:                                      ; preds = %for.cond119
+  %idxprom124 = sext i32 %idx.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx125 = getelementptr inbounds [16 x i16], [16 x i16]* @block_idx_xy_fdec, i64 0, i64 %idxprom124, !sourceFile !3, !mergedLineNum !4
+  %29 = load i16, i16* %arrayidx125, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv126 = zext i16 %29 to i32, !sourceFile !3, !mergedLineNum !4
+  %idx.ext = sext i32 %conv126 to i64, !sourceFile !3, !mergedLineNum !4
+  %add.ptr = getelementptr inbounds i8, i8* %0, i64 %idx.ext, !sourceFile !3, !mergedLineNum !4
+  %i_neighbour4 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 26, !sourceFile !3, !mergedLineNum !4
+  %arrayidx129 = getelementptr inbounds [16 x i32], [16 x i32]* %i_neighbour4, i64 0, i64 %idxprom124, !sourceFile !3, !mergedLineNum !4
+  %30 = load i32, i32* %arrayidx129, align 4, !sourceFile !3, !mergedLineNum !4
+  %call130 = call i8* @predict_4x4_mode_available(i32 %30), !sourceFile !3, !mergedLineNum !4
+  %31 = load i32, i32* %arrayidx129, align 4, !sourceFile !3, !mergedLineNum !4
+  %and = and i32 %31, 6, !sourceFile !3, !mergedLineNum !4
+  %cmp135 = icmp eq i32 %and, 2, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp135, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end158:                                        ; preds = %if.else155, %if.then154
+  %i_lambda2159 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %35 = load i32, i32* %i_lambda2159, align 4, !sourceFile !3, !mergedLineNum !4
+  %call160 = call i64 @x264_rd_cost_i4x4(%struct.x264_t* %h, i32 %35, i32 %idx.0, i32 %conv145), !sourceFile !3, !mergedLineNum !4
+  %cmp161 = icmp ugt i64 %i_best.5, %call160, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp161, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %idxprom = sext i32 %conv61 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx65 = getelementptr inbounds [4 x i32], [4 x i32]* %satdu, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %25 = load i32, i32* %arrayidx65, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx67 = getelementptr inbounds [4 x i32], [4 x i32]* %satdv, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %26 = load i32, i32* %arrayidx67, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %25, %26, !sourceFile !3, !mergedLineNum !4
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %27 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %call68 = call i32 @bs_size_ue(i32 %conv61), !sourceFile !3, !mergedLineNum !4
+  %mul = mul nsw i32 %27, %call68, !sourceFile !3, !mergedLineNum !4
+  %add69 = add nsw i32 %add, %mul, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i8x8chroma_dir = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %arrayidx71 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i8x8chroma_dir, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  store i32 %add69, i32* %arrayidx71, align 4, !sourceFile !3, !mergedLineNum !4
+  %28 = load i32, i32* %i_satd_i8x8chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp73 = icmp slt i32 %add69, %28, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp73, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %idxprom = sext i32 %conv61 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx65 = getelementptr inbounds [4 x i32], [4 x i32]* %satdu, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %25 = load i32, i32* %arrayidx65, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx67 = getelementptr inbounds [4 x i32], [4 x i32]* %satdv, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %26 = load i32, i32* %arrayidx67, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %25, %26, !sourceFile !3, !mergedLineNum !4
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %27 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %call68 = call i32 @bs_size_ue(i32 %conv61), !sourceFile !3, !mergedLineNum !4
+  %mul = mul nsw i32 %27, %call68, !sourceFile !3, !mergedLineNum !4
+  %add69 = add nsw i32 %add, %mul, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i8x8chroma_dir = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %arrayidx71 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i8x8chroma_dir, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  store i32 %add69, i32* %arrayidx71, align 4, !sourceFile !3, !mergedLineNum !4
+  %28 = load i32, i32* %i_satd_i8x8chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp73 = icmp slt i32 %add69, %28, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp73, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end105:                                        ; preds = %if.else90, %if.then89
+  %mbcmp107 = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx108 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp107, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %35 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx108, align 8, !sourceFile !3, !mergedLineNum !4
+  %pic110 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb2, i32 0, i32 66, !sourceFile !3, !mergedLineNum !4
+  %p_fdec111 = getelementptr inbounds %struct.anon.11, %struct.anon.11* %pic110, i32 0, i32 18, !sourceFile !3, !mergedLineNum !4
+  %arrayidx112 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fdec111, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %36 = load i8*, i8** %arrayidx112, align 8, !sourceFile !3, !mergedLineNum !4
+  %p_fenc115 = getelementptr inbounds %struct.anon.11, %struct.anon.11* %pic110, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx116 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc115, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %37 = load i8*, i8** %arrayidx116, align 8, !sourceFile !3, !mergedLineNum !4
+  %call117 = call i32 %35(i8* %36, i32 32, i8* %37, i32 16), !sourceFile !3, !mergedLineNum !4
+  %38 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx108, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx124 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fdec111, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %39 = load i8*, i8** %arrayidx124, align 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx128 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc115, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %40 = load i8*, i8** %arrayidx128, align 16, !sourceFile !3, !mergedLineNum !4
+  %call129 = call i32 %38(i8* %39, i32 32, i8* %40, i32 16), !sourceFile !3, !mergedLineNum !4
+  %add130 = add nsw i32 %call117, %call129, !sourceFile !3, !mergedLineNum !4
+  %i_lambda131 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %41 = load i32, i32* %i_lambda131, align 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom132 = sext i32 %conv79 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx133 = getelementptr inbounds [7 x i8], [7 x i8]* @x264_mb_pred_mode8x8c_fix, i64 0, i64 %idxprom132, !sourceFile !3, !mergedLineNum !4
+  %42 = load i8, i8* %arrayidx133, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv134 = zext i8 %42 to i32, !sourceFile !3, !mergedLineNum !4
+  %call135 = call i32 @bs_size_ue(i32 %conv134), !sourceFile !3, !mergedLineNum !4
+  %mul136 = mul nsw i32 %41, %call135, !sourceFile !3, !mergedLineNum !4
+  %add137 = add nsw i32 %add130, %mul136, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i8x8chroma_dir138 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %arrayidx140 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i8x8chroma_dir138, i64 0, i64 %idxprom132, !sourceFile !3, !mergedLineNum !4
+  store i32 %add137, i32* %arrayidx140, align 4, !sourceFile !3, !mergedLineNum !4
+  %43 = load i32, i32* %i_satd_i8x8chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp142 = icmp slt i32 %add137, %43, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp142, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end105:                                        ; preds = %if.else90, %if.then89
+  %mbcmp107 = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx108 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp107, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %35 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx108, align 8, !sourceFile !3, !mergedLineNum !4
+  %pic110 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb2, i32 0, i32 66, !sourceFile !3, !mergedLineNum !4
+  %p_fdec111 = getelementptr inbounds %struct.anon.11, %struct.anon.11* %pic110, i32 0, i32 18, !sourceFile !3, !mergedLineNum !4
+  %arrayidx112 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fdec111, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %36 = load i8*, i8** %arrayidx112, align 8, !sourceFile !3, !mergedLineNum !4
+  %p_fenc115 = getelementptr inbounds %struct.anon.11, %struct.anon.11* %pic110, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx116 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc115, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %37 = load i8*, i8** %arrayidx116, align 8, !sourceFile !3, !mergedLineNum !4
+  %call117 = call i32 %35(i8* %36, i32 32, i8* %37, i32 16), !sourceFile !3, !mergedLineNum !4
+  %38 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx108, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx124 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fdec111, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %39 = load i8*, i8** %arrayidx124, align 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx128 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc115, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %40 = load i8*, i8** %arrayidx128, align 16, !sourceFile !3, !mergedLineNum !4
+  %call129 = call i32 %38(i8* %39, i32 32, i8* %40, i32 16), !sourceFile !3, !mergedLineNum !4
+  %add130 = add nsw i32 %call117, %call129, !sourceFile !3, !mergedLineNum !4
+  %i_lambda131 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %41 = load i32, i32* %i_lambda131, align 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom132 = sext i32 %conv79 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx133 = getelementptr inbounds [7 x i8], [7 x i8]* @x264_mb_pred_mode8x8c_fix, i64 0, i64 %idxprom132, !sourceFile !3, !mergedLineNum !4
+  %42 = load i8, i8* %arrayidx133, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv134 = zext i8 %42 to i32, !sourceFile !3, !mergedLineNum !4
+  %call135 = call i32 @bs_size_ue(i32 %conv134), !sourceFile !3, !mergedLineNum !4
+  %mul136 = mul nsw i32 %41, %call135, !sourceFile !3, !mergedLineNum !4
+  %add137 = add nsw i32 %add130, %mul136, !sourceFile !3, !mergedLineNum !4
+  %i_satd_i8x8chroma_dir138 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %arrayidx140 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i8x8chroma_dir138, i64 0, i64 %idxprom132, !sourceFile !3, !mergedLineNum !4
+  store i32 %add137, i32* %arrayidx140, align 4, !sourceFile !3, !mergedLineNum !4
+  %43 = load i32, i32* %i_satd_i8x8chroma, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp142 = icmp slt i32 %add137, %43, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp142, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then:                                          ; preds = %land.lhs.true12
+  store i32 0, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cache = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 67, !sourceFile !3, !mergedLineNum !4
+  %ref18 = getelementptr inbounds %struct.anon.12, %struct.anon.12* %cache, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %arrayidx20 = getelementptr inbounds [2 x [40 x i8]], [2 x [40 x i8]]* %ref18, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %arrayidx21 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %arrayidx21, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp24 = icmp sgt i32 %conv, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp24, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end:                                           ; preds = %merged.bb
+  %arrayidx35 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 4, !sourceFile !3, !mergedLineNum !4
+  %9 = load i8, i8* %arrayidx35, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv36 = sext i8 %9 to i32, !sourceFile !3, !mergedLineNum !4
+  %10 = load i32, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp39 = icmp sgt i32 %conv36, %10, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp39, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end44:                                         ; preds = %merged.bb798
+  %arrayidx51 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 6, !sourceFile !3, !mergedLineNum !4
+  %11 = load i8, i8* %arrayidx51, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv52 = sext i8 %11 to i32, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp55 = icmp sgt i32 %conv52, %12, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp55, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end60:                                         ; preds = %merged.bb801
+  %arrayidx67 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 8, !sourceFile !3, !mergedLineNum !4
+  %13 = load i8, i8* %arrayidx67, align 8, !sourceFile !3, !mergedLineNum !4
+  %conv68 = sext i8 %13 to i32, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp71 = icmp sgt i32 %conv68, %14, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp71, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end76:                                         ; preds = %merged.bb804
+  %arrayidx83 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 11, !sourceFile !3, !mergedLineNum !4
+  %15 = load i8, i8* %arrayidx83, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv84 = sext i8 %15 to i32, !sourceFile !3, !mergedLineNum !4
+  %16 = load i32, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp87 = icmp sgt i32 %conv84, %16, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp87, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end92:                                         ; preds = %merged.bb807
+  %arrayidx99 = getelementptr inbounds [40 x i8], [40 x i8]* %arrayidx20, i64 0, i64 27, !sourceFile !3, !mergedLineNum !4
+  %17 = load i8, i8* %arrayidx99, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv100 = sext i8 %17 to i32, !sourceFile !3, !mergedLineNum !4
+  %18 = load i32, i32* %arrayidx6, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp103 = icmp sgt i32 %conv100, %18, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp103, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.cond.cleanup168:                              ; preds = %for.cond165
+  %mc366 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 70, !sourceFile !3, !mergedLineNum !4
+  %get_ref = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc366, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %29 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx367 = getelementptr inbounds [2 x [64 x i8]], [2 x [64 x i8]]* %pix, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arraydecay368 = getelementptr inbounds [64 x i8], [64 x i8]* %arrayidx367, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx369 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %l0370 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 22, !sourceFile !3, !mergedLineNum !4
+  %me8x8371 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0370, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %idxprom372 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx373 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x8371, i64 0, i64 %idxprom372, !sourceFile !3, !mergedLineNum !4
+  %p_fref374 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay375 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref374, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride380 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx381 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride380, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %30 = load i32, i32* %arrayidx381, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv386 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx387 = getelementptr inbounds [2 x i16], [2 x i16]* %mv386, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %31 = load i16, i16* %arrayidx387, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv388 = sext i16 %31 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx394 = getelementptr inbounds [2 x i16], [2 x i16]* %mv386, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %32 = load i16, i16* %arrayidx394, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv395 = sext i16 %32 to i32, !sourceFile !3, !mergedLineNum !4
+  %call396 = call i8* %29(i8* %arraydecay368, i32* %arrayidx369, i8** %arraydecay375, i32 %30, i32 %conv388, i32 %conv395, i32 8, i32 8, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %33 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx400 = getelementptr inbounds [2 x [64 x i8]], [2 x [64 x i8]]* %pix, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %arraydecay401 = getelementptr inbounds [64 x i8], [64 x i8]* %arrayidx400, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx402 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %l1403 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 23, !sourceFile !3, !mergedLineNum !4
+  %me8x8404 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l1403, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx406 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x8404, i64 0, i64 %idxprom372, !sourceFile !3, !mergedLineNum !4
+  %p_fref407 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay408 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref407, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride413 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx414 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride413, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %34 = load i32, i32* %arrayidx414, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv419 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx420 = getelementptr inbounds [2 x i16], [2 x i16]* %mv419, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %35 = load i16, i16* %arrayidx420, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv421 = sext i16 %35 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx427 = getelementptr inbounds [2 x i16], [2 x i16]* %mv419, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %36 = load i16, i16* %arrayidx427, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv428 = sext i16 %36 to i32, !sourceFile !3, !mergedLineNum !4
+  %call429 = call i8* %33(i8* %arraydecay401, i32* %arrayidx402, i8** %arraydecay408, i32 %34, i32 %conv421, i32 %conv428, i32 8, i32 8, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %avg = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc366, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %arrayidx432 = getelementptr inbounds [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*], [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*]* %avg, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %37 = load void (i8*, i32, i8*, i32, i8*, i32, i32)*, void (i8*, i32, i8*, i32, i8*, i32, i32)** %arrayidx432, align 8, !sourceFile !3, !mergedLineNum !4
+  %38 = load i32, i32* %arrayidx369, align 4, !sourceFile !3, !mergedLineNum !4
+  %39 = load i32, i32* %arrayidx402, align 4, !sourceFile !3, !mergedLineNum !4
+  %bipred_weight = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 82, !sourceFile !3, !mergedLineNum !4
+  %40 = load [4 x i8]*, [4 x i8]** %bipred_weight, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_ref444 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %41 = load i32, i32* %i_ref444, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom445 = sext i32 %41 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx446 = getelementptr inbounds [4 x i8], [4 x i8]* %40, i64 %idxprom445, !sourceFile !3, !mergedLineNum !4
+  %i_ref451 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %42 = load i32, i32* %i_ref451, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom452 = sext i32 %42 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx453 = getelementptr inbounds [4 x i8], [4 x i8]* %arrayidx446, i64 0, i64 %idxprom452, !sourceFile !3, !mergedLineNum !4
+  %43 = load i8, i8* %arrayidx453, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv454 = sext i8 %43 to i32, !sourceFile !3, !mergedLineNum !4
+  call void %37(i8* %arraydecay368, i32 8, i8* %call396, i32 %38, i8* %call429, i32 %39, i32 %conv454), !sourceFile !3, !mergedLineNum !4
+  %pixf = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 69, !sourceFile !3, !mergedLineNum !4
+  %mbcmp = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx455 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %44 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx455, align 8, !sourceFile !3, !mergedLineNum !4
+  %p_fenc460 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx461 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc460, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %45 = load i8*, i8** %arrayidx461, align 8, !sourceFile !3, !mergedLineNum !4
+  %call464 = call i32 %44(i8* %45, i32 16, i8* %arraydecay368, i32 8), !sourceFile !3, !mergedLineNum !4
+  %i_satd8x8465 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 28, !sourceFile !3, !mergedLineNum !4
+  %arrayidx466 = getelementptr inbounds [3 x [4 x i32]], [3 x [4 x i32]]* %i_satd8x8465, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %arrayidx468 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx466, i64 0, i64 %idxprom372, !sourceFile !3, !mergedLineNum !4
+  store i32 %call464, i32* %arrayidx468, align 4, !sourceFile !3, !mergedLineNum !4
+  %cost_mv477 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %46 = load i32, i32* %cost_mv477, align 4, !sourceFile !3, !mergedLineNum !4
+  %add478 = add nsw i32 %call464, %46, !sourceFile !3, !mergedLineNum !4
+  %cost_mv483 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %47 = load i32, i32* %cost_mv483, align 4, !sourceFile !3, !mergedLineNum !4
+  %add484 = add nsw i32 %add478, %47, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost489 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %48 = load i32, i32* %i_ref_cost489, align 16, !sourceFile !3, !mergedLineNum !4
+  %add490 = add nsw i32 %add484, %48, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost495 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %49 = load i32, i32* %i_ref_cost495, align 16, !sourceFile !3, !mergedLineNum !4
+  %add496 = add nsw i32 %add490, %49, !sourceFile !3, !mergedLineNum !4
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %50 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %mul498 = mul nsw i32 %50, 5, !sourceFile !3, !mergedLineNum !4
+  %add499 = add nsw i32 %add496, %mul498, !sourceFile !3, !mergedLineNum !4
+  %mul502 = mul nsw i32 %50, 3, !sourceFile !3, !mergedLineNum !4
+  %cost507 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx373, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %51 = load i32, i32* %cost507, align 8, !sourceFile !3, !mergedLineNum !4
+  %add508 = add nsw i32 %51, %mul502, !sourceFile !3, !mergedLineNum !4
+  store i32 %add508, i32* %cost507, align 8, !sourceFile !3, !mergedLineNum !4
+  %52 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %mul511 = mul nsw i32 %52, 3, !sourceFile !3, !mergedLineNum !4
+  %cost516 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx406, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %53 = load i32, i32* %cost516, align 8, !sourceFile !3, !mergedLineNum !4
+  %add517 = add nsw i32 %53, %mul511, !sourceFile !3, !mergedLineNum !4
+  store i32 %add517, i32* %cost516, align 8, !sourceFile !3, !mergedLineNum !4
+  %54 = load i32, i32* %cost507, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_sub_partition = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 55, !sourceFile !3, !mergedLineNum !4
+  %arrayidx525 = getelementptr inbounds [4 x i8], [4 x i8]* %i_sub_partition, i64 0, i64 %idxprom372, !sourceFile !3, !mergedLineNum !4
+  store i8 3, i8* %arrayidx525, align 1, !sourceFile !3, !mergedLineNum !4
+  %55 = load i32, i32* %cost516, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp531 = icmp slt i32 %55, %54, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp531, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end543:                                        ; preds = %merged.bb814
+  %cmp544 = icmp slt i32 %add499, %moved.sel, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp544, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end551:                                        ; preds = %merged.bb818
+  %i_cost8x8direct = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 27, !sourceFile !3, !mergedLineNum !4
+  %arrayidx553 = getelementptr inbounds [4 x i32], [4 x i32]* %i_cost8x8direct, i64 0, i64 %idxprom372, !sourceFile !3, !mergedLineNum !4
+  %84 = load i32, i32* %arrayidx553, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp554 = icmp slt i32 %84, %moved.sel821, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp554, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.cond.cleanup15:                               ; preds = %for.cond13
+  %mc232 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 70, !sourceFile !3, !mergedLineNum !4
+  %avg = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc232, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %arrayidx233 = getelementptr inbounds [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*], [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*]* %avg, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %8 = load void (i8*, i32, i8*, i32, i8*, i32, i32)*, void (i8*, i32, i8*, i32, i8*, i32, i32)** %arrayidx233, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx234 = getelementptr inbounds [2 x [64 x i8]], [2 x [64 x i8]]* %pix, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arraydecay235 = getelementptr inbounds [64 x i8], [64 x i8]* %arrayidx234, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx236 = getelementptr inbounds [2 x i8*], [2 x i8*]* %src, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %9 = load i8*, i8** %arrayidx236, align 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx237 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %10 = load i32, i32* %arrayidx237, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx238 = getelementptr inbounds [2 x i8*], [2 x i8*]* %src, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %11 = load i8*, i8** %arrayidx238, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx239 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %arrayidx239, align 4, !sourceFile !3, !mergedLineNum !4
+  %bipred_weight = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 82, !sourceFile !3, !mergedLineNum !4
+  %13 = load [4 x i8]*, [4 x i8]** %bipred_weight, align 16, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %i_ref, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom244 = sext i32 %14 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx245 = getelementptr inbounds [4 x i8], [4 x i8]* %13, i64 %idxprom244, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %i_ref8, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom249 = sext i32 %15 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx250 = getelementptr inbounds [4 x i8], [4 x i8]* %arrayidx245, i64 0, i64 %idxprom249, !sourceFile !3, !mergedLineNum !4
+  %16 = load i8, i8* %arrayidx250, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv251 = sext i8 %16 to i32, !sourceFile !3, !mergedLineNum !4
+  call void %8(i8* %arraydecay235, i32 8, i8* %9, i32 %10, i8* %11, i32 %12, i32 %conv251), !sourceFile !3, !mergedLineNum !4
+  %pixf = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 69, !sourceFile !3, !mergedLineNum !4
+  %mbcmp = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx252 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp, i64 0, i64 3, !sourceFile !3, !mergedLineNum !4
+  %17 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx252, align 8, !sourceFile !3, !mergedLineNum !4
+  %me8x8254 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %idxprom255 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx256 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x8254, i64 0, i64 %idxprom255, !sourceFile !3, !mergedLineNum !4
+  %p_fenc257 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx256, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx258 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc257, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %18 = load i8*, i8** %arrayidx258, align 8, !sourceFile !3, !mergedLineNum !4
+  %call261 = call i32 %17(i8* %18, i32 16, i8* %arraydecay235, i32 8), !sourceFile !3, !mergedLineNum !4
+  %i_satd8x8262 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 28, !sourceFile !3, !mergedLineNum !4
+  %arrayidx263 = getelementptr inbounds [3 x [4 x i32]], [3 x [4 x i32]]* %i_satd8x8262, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %arrayidx265 = getelementptr inbounds [4 x i32], [4 x i32]* %arrayidx263, i64 0, i64 %idxprom255, !sourceFile !3, !mergedLineNum !4
+  store i32 %call261, i32* %arrayidx265, align 4, !sourceFile !3, !mergedLineNum !4
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %19 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %mul271 = mul nsw i32 %19, 5, !sourceFile !3, !mergedLineNum !4
+  %add272 = add nsw i32 %call261, %mul271, !sourceFile !3, !mergedLineNum !4
+  %add273 = add nsw i32 %i_part_cost_bi.0, %add272, !sourceFile !3, !mergedLineNum !4
+  %mul276 = mul nsw i32 %19, 3, !sourceFile !3, !mergedLineNum !4
+  %cost281 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx256, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %20 = load i32, i32* %cost281, align 8, !sourceFile !3, !mergedLineNum !4
+  %add282 = add nsw i32 %20, %mul276, !sourceFile !3, !mergedLineNum !4
+  store i32 %add282, i32* %cost281, align 8, !sourceFile !3, !mergedLineNum !4
+  %21 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %mul285 = mul nsw i32 %21, 3, !sourceFile !3, !mergedLineNum !4
+  %me8x8287 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l1, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx289 = getelementptr inbounds [4 x %struct.x264_me_t], [4 x %struct.x264_me_t]* %me8x8287, i64 0, i64 %idxprom255, !sourceFile !3, !mergedLineNum !4
+  %cost290 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx289, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %22 = load i32, i32* %cost290, align 8, !sourceFile !3, !mergedLineNum !4
+  %add291 = add nsw i32 %22, %mul285, !sourceFile !3, !mergedLineNum !4
+  store i32 %add291, i32* %cost290, align 8, !sourceFile !3, !mergedLineNum !4
+  %23 = load i32, i32* %cost281, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_sub_partition = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 55, !sourceFile !3, !mergedLineNum !4
+  %arrayidx299 = getelementptr inbounds [4 x i8], [4 x i8]* %i_sub_partition, i64 0, i64 %idxprom255, !sourceFile !3, !mergedLineNum !4
+  store i8 3, i8* %arrayidx299, align 1, !sourceFile !3, !mergedLineNum !4
+  %24 = load i32, i32* %cost290, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp305 = icmp slt i32 %24, %23, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp305, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end:                                           ; preds = %merged.bb
+  %cmp316 = icmp slt i32 %add273, %moved.sel, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp316, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end323:                                        ; preds = %merged.bb520
+  %i_cost8x8direct = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 27, !sourceFile !3, !mergedLineNum !4
+  %arrayidx325 = getelementptr inbounds [4 x i32], [4 x i32]* %i_cost8x8direct, i64 0, i64 %idxprom255, !sourceFile !3, !mergedLineNum !4
+  %73 = load i32, i32* %arrayidx325, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp326 = icmp slt i32 %73, %moved.sel523, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp326, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.cond.cleanup43:                               ; preds = %for.cond41
+  %mc241 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 70, !sourceFile !3, !mergedLineNum !4
+  %get_ref = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc241, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %10 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx242 = getelementptr inbounds [2 x [128 x i8]], [2 x [128 x i8]]* %pix, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arraydecay243 = getelementptr inbounds [128 x i8], [128 x i8]* %arrayidx242, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx244 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %l0245 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 22, !sourceFile !3, !mergedLineNum !4
+  %me16x8246 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0245, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom247 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx248 = getelementptr inbounds [2 x %struct.x264_me_t], [2 x %struct.x264_me_t]* %me16x8246, i64 0, i64 %idxprom247, !sourceFile !3, !mergedLineNum !4
+  %p_fref249 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay250 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref249, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride255 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx256 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride255, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %11 = load i32, i32* %arrayidx256, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx261 = getelementptr inbounds [2 x i16], [2 x i16]* %mv, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %12 = load i16, i16* %arrayidx261, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv262 = sext i16 %12 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx268 = getelementptr inbounds [2 x i16], [2 x i16]* %mv, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %13 = load i16, i16* %arrayidx268, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv269 = sext i16 %13 to i32, !sourceFile !3, !mergedLineNum !4
+  %call270 = call i8* %10(i8* %arraydecay243, i32* %arrayidx244, i8** %arraydecay250, i32 %11, i32 %conv262, i32 %conv269, i32 16, i32 8, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %14 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx274 = getelementptr inbounds [2 x [128 x i8]], [2 x [128 x i8]]* %pix, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %arraydecay275 = getelementptr inbounds [128 x i8], [128 x i8]* %arrayidx274, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx276 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %l1277 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 23, !sourceFile !3, !mergedLineNum !4
+  %me16x8278 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l1277, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx280 = getelementptr inbounds [2 x %struct.x264_me_t], [2 x %struct.x264_me_t]* %me16x8278, i64 0, i64 %idxprom247, !sourceFile !3, !mergedLineNum !4
+  %p_fref281 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay282 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref281, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride287 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx288 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride287, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %arrayidx288, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv293 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx294 = getelementptr inbounds [2 x i16], [2 x i16]* %mv293, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %16 = load i16, i16* %arrayidx294, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv295 = sext i16 %16 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx301 = getelementptr inbounds [2 x i16], [2 x i16]* %mv293, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %17 = load i16, i16* %arrayidx301, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv302 = sext i16 %17 to i32, !sourceFile !3, !mergedLineNum !4
+  %call303 = call i8* %14(i8* %arraydecay275, i32* %arrayidx276, i8** %arraydecay282, i32 %15, i32 %conv295, i32 %conv302, i32 16, i32 8, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %avg = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc241, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %arrayidx306 = getelementptr inbounds [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*], [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*]* %avg, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %18 = load void (i8*, i32, i8*, i32, i8*, i32, i32)*, void (i8*, i32, i8*, i32, i8*, i32, i32)** %arrayidx306, align 8, !sourceFile !3, !mergedLineNum !4
+  %19 = load i32, i32* %arrayidx244, align 4, !sourceFile !3, !mergedLineNum !4
+  %20 = load i32, i32* %arrayidx276, align 4, !sourceFile !3, !mergedLineNum !4
+  %bipred_weight = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 82, !sourceFile !3, !mergedLineNum !4
+  %21 = load [4 x i8]*, [4 x i8]** %bipred_weight, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_ref318 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %22 = load i32, i32* %i_ref318, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom319 = sext i32 %22 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx320 = getelementptr inbounds [4 x i8], [4 x i8]* %21, i64 %idxprom319, !sourceFile !3, !mergedLineNum !4
+  %i_ref325 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %23 = load i32, i32* %i_ref325, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom326 = sext i32 %23 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx327 = getelementptr inbounds [4 x i8], [4 x i8]* %arrayidx320, i64 0, i64 %idxprom326, !sourceFile !3, !mergedLineNum !4
+  %24 = load i8, i8* %arrayidx327, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv328 = sext i8 %24 to i32, !sourceFile !3, !mergedLineNum !4
+  call void %18(i8* %arraydecay243, i32 16, i8* %call270, i32 %19, i8* %call303, i32 %20, i32 %conv328), !sourceFile !3, !mergedLineNum !4
+  %pixf = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 69, !sourceFile !3, !mergedLineNum !4
+  %mbcmp = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx329 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %25 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx329, align 8, !sourceFile !3, !mergedLineNum !4
+  %p_fenc334 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx335 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc334, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %26 = load i8*, i8** %arrayidx335, align 8, !sourceFile !3, !mergedLineNum !4
+  %call338 = call i32 %25(i8* %26, i32 16, i8* %arraydecay243, i32 16), !sourceFile !3, !mergedLineNum !4
+  %cost_mv = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %27 = load i32, i32* %cost_mv, align 4, !sourceFile !3, !mergedLineNum !4
+  %add343 = add nsw i32 %call338, %27, !sourceFile !3, !mergedLineNum !4
+  %cost_mv348 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %28 = load i32, i32* %cost_mv348, align 4, !sourceFile !3, !mergedLineNum !4
+  %add349 = add nsw i32 %add343, %28, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost354 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %29 = load i32, i32* %i_ref_cost354, align 16, !sourceFile !3, !mergedLineNum !4
+  %add355 = add nsw i32 %add349, %29, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost360 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %30 = load i32, i32* %i_ref_cost360, align 16, !sourceFile !3, !mergedLineNum !4
+  %add361 = add nsw i32 %add355, %30, !sourceFile !3, !mergedLineNum !4
+  %cost366 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx248, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %31 = load i32, i32* %cost366, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_mb_partition16x8 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 38, !sourceFile !3, !mergedLineNum !4
+  %arrayidx368 = getelementptr inbounds [2 x i32], [2 x i32]* %i_mb_partition16x8, i64 0, i64 %idxprom247, !sourceFile !3, !mergedLineNum !4
+  store i32 3, i32* %arrayidx368, align 4, !sourceFile !3, !mergedLineNum !4
+  %cost373 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx280, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %32 = load i32, i32* %cost373, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp374 = icmp slt i32 %32, %31, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp374, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end385:                                        ; preds = %merged.bb
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %69 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %add387 = add nsw i32 %add361, %69, !sourceFile !3, !mergedLineNum !4
+  %cmp388 = icmp slt i32 %add387, %moved.sel, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp388, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.cond.cleanup40:                               ; preds = %for.cond38
+  %mc234 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 70, !sourceFile !3, !mergedLineNum !4
+  %get_ref = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc234, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %10 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx235 = getelementptr inbounds [2 x [128 x i8]], [2 x [128 x i8]]* %pix, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arraydecay236 = getelementptr inbounds [128 x i8], [128 x i8]* %arrayidx235, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx237 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %l0238 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 22, !sourceFile !3, !mergedLineNum !4
+  %me8x16239 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l0238, i32 0, i32 19, !sourceFile !3, !mergedLineNum !4
+  %idxprom240 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx241 = getelementptr inbounds [2 x %struct.x264_me_t], [2 x %struct.x264_me_t]* %me8x16239, i64 0, i64 %idxprom240, !sourceFile !3, !mergedLineNum !4
+  %p_fref242 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay243 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref242, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride248 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx249 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride248, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %11 = load i32, i32* %arrayidx249, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx254 = getelementptr inbounds [2 x i16], [2 x i16]* %mv, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %12 = load i16, i16* %arrayidx254, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv255 = sext i16 %12 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx261 = getelementptr inbounds [2 x i16], [2 x i16]* %mv, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %13 = load i16, i16* %arrayidx261, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv262 = sext i16 %13 to i32, !sourceFile !3, !mergedLineNum !4
+  %call263 = call i8* %10(i8* %arraydecay236, i32* %arrayidx237, i8** %arraydecay243, i32 %11, i32 %conv255, i32 %conv262, i32 8, i32 16, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %14 = load i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)*, i8* (i8*, i32*, i8**, i32, i32, i32, i32, i32, %struct.x264_weight_t*)** %get_ref, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx267 = getelementptr inbounds [2 x [128 x i8]], [2 x [128 x i8]]* %pix, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %arraydecay268 = getelementptr inbounds [128 x i8], [128 x i8]* %arrayidx267, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx269 = getelementptr inbounds [2 x i32], [2 x i32]* %stride, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %l1270 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 23, !sourceFile !3, !mergedLineNum !4
+  %me8x16271 = getelementptr inbounds %struct.x264_mb_analysis_list_t, %struct.x264_mb_analysis_list_t* %l1270, i32 0, i32 19, !sourceFile !3, !mergedLineNum !4
+  %arrayidx273 = getelementptr inbounds [2 x %struct.x264_me_t], [2 x %struct.x264_me_t]* %me8x16271, i64 0, i64 %idxprom240, !sourceFile !3, !mergedLineNum !4
+  %p_fref274 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arraydecay275 = getelementptr inbounds [6 x i8*], [6 x i8*]* %p_fref274, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %i_stride280 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 9, !sourceFile !3, !mergedLineNum !4
+  %arrayidx281 = getelementptr inbounds [2 x i32], [2 x i32]* %i_stride280, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %15 = load i32, i32* %arrayidx281, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv286 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arrayidx287 = getelementptr inbounds [2 x i16], [2 x i16]* %mv286, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %16 = load i16, i16* %arrayidx287, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv288 = sext i16 %16 to i32, !sourceFile !3, !mergedLineNum !4
+  %arrayidx294 = getelementptr inbounds [2 x i16], [2 x i16]* %mv286, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %17 = load i16, i16* %arrayidx294, align 2, !sourceFile !3, !mergedLineNum !4
+  %conv295 = sext i16 %17 to i32, !sourceFile !3, !mergedLineNum !4
+  %call296 = call i8* %14(i8* %arraydecay268, i32* %arrayidx269, i8** %arraydecay275, i32 %15, i32 %conv288, i32 %conv295, i32 8, i32 16, %struct.x264_weight_t* getelementptr inbounds ([3 x %struct.x264_weight_t], [3 x %struct.x264_weight_t]* @weight_none, i64 0, i64 0)), !sourceFile !3, !mergedLineNum !4
+  %avg = getelementptr inbounds %struct.x264_mc_functions_t, %struct.x264_mc_functions_t* %mc234, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %arrayidx299 = getelementptr inbounds [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*], [10 x void (i8*, i32, i8*, i32, i8*, i32, i32)*]* %avg, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %18 = load void (i8*, i32, i8*, i32, i8*, i32, i32)*, void (i8*, i32, i8*, i32, i8*, i32, i32)** %arrayidx299, align 8, !sourceFile !3, !mergedLineNum !4
+  %19 = load i32, i32* %arrayidx237, align 4, !sourceFile !3, !mergedLineNum !4
+  %20 = load i32, i32* %arrayidx269, align 4, !sourceFile !3, !mergedLineNum !4
+  %bipred_weight = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 82, !sourceFile !3, !mergedLineNum !4
+  %21 = load [4 x i8]*, [4 x i8]** %bipred_weight, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_ref311 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %22 = load i32, i32* %i_ref311, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom312 = sext i32 %22 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx313 = getelementptr inbounds [4 x i8], [4 x i8]* %21, i64 %idxprom312, !sourceFile !3, !mergedLineNum !4
+  %i_ref318 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  %23 = load i32, i32* %i_ref318, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom319 = sext i32 %23 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx320 = getelementptr inbounds [4 x i8], [4 x i8]* %arrayidx313, i64 0, i64 %idxprom319, !sourceFile !3, !mergedLineNum !4
+  %24 = load i8, i8* %arrayidx320, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv321 = sext i8 %24 to i32, !sourceFile !3, !mergedLineNum !4
+  call void %18(i8* %arraydecay236, i32 8, i8* %call263, i32 %19, i8* %call296, i32 %20, i32 %conv321), !sourceFile !3, !mergedLineNum !4
+  %pixf = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 69, !sourceFile !3, !mergedLineNum !4
+  %mbcmp = getelementptr inbounds %struct.x264_pixel_function_t, %struct.x264_pixel_function_t* %pixf, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %arrayidx322 = getelementptr inbounds [7 x i32 (i8*, i32, i8*, i32)*], [7 x i32 (i8*, i32, i8*, i32)*]* %mbcmp, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %25 = load i32 (i8*, i32, i8*, i32)*, i32 (i8*, i32, i8*, i32)** %arrayidx322, align 8, !sourceFile !3, !mergedLineNum !4
+  %p_fenc327 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %arrayidx328 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fenc327, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %26 = load i8*, i8** %arrayidx328, align 8, !sourceFile !3, !mergedLineNum !4
+  %call331 = call i32 %25(i8* %26, i32 16, i8* %arraydecay236, i32 8), !sourceFile !3, !mergedLineNum !4
+  %cost_mv = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %27 = load i32, i32* %cost_mv, align 4, !sourceFile !3, !mergedLineNum !4
+  %add336 = add nsw i32 %call331, %27, !sourceFile !3, !mergedLineNum !4
+  %cost_mv341 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 11, !sourceFile !3, !mergedLineNum !4
+  %28 = load i32, i32* %cost_mv341, align 4, !sourceFile !3, !mergedLineNum !4
+  %add342 = add nsw i32 %add336, %28, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost347 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %29 = load i32, i32* %i_ref_cost347, align 16, !sourceFile !3, !mergedLineNum !4
+  %add348 = add nsw i32 %add342, %29, !sourceFile !3, !mergedLineNum !4
+  %i_ref_cost353 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %30 = load i32, i32* %i_ref_cost353, align 16, !sourceFile !3, !mergedLineNum !4
+  %add354 = add nsw i32 %add348, %30, !sourceFile !3, !mergedLineNum !4
+  %cost359 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx241, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %31 = load i32, i32* %cost359, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_mb_partition8x16 = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 39, !sourceFile !3, !mergedLineNum !4
+  %arrayidx361 = getelementptr inbounds [2 x i32], [2 x i32]* %i_mb_partition8x16, i64 0, i64 %idxprom240, !sourceFile !3, !mergedLineNum !4
+  store i32 3, i32* %arrayidx361, align 4, !sourceFile !3, !mergedLineNum !4
+  %cost366 = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx273, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %32 = load i32, i32* %cost366, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp367 = icmp slt i32 %32, %31, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp367, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end378:                                        ; preds = %merged.bb
+  %i_lambda = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %69 = load i32, i32* %i_lambda, align 16, !sourceFile !3, !mergedLineNum !4
+  %add380 = add nsw i32 %add354, %69, !sourceFile !3, !mergedLineNum !4
+  %cmp381 = icmp slt i32 %add380, %moved.sel, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp381, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %idxprom192 = sext i32 %41 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx193 = getelementptr inbounds i32, i32* %9, i64 %idxprom192, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %arrayidx193, align 4, !sourceFile !3, !mergedLineNum !4
+  %42 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx, align 8, !sourceFile !3, !mergedLineNum !4
+  %b_intra_calculated196 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %42, i32 0, i32 62, !sourceFile !3, !mergedLineNum !4
+  %43 = load i32, i32* %b_intra_calculated196, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool197 = icmp ne i32 %43, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool197, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true446:                                 ; preds = %if.then444
+  %cmp449 = icmp sgt i32 %71, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp449, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body22:                                       ; preds = %for.cond19
+  %call23 = call i32 @scenecut_internal(%struct.x264_t* %h, %struct.x264_mb_analysis_t* %a, %struct.x264_frame** %frames, i32 %curp0.0, i32 %cond, i32 0), !sourceFile !3, !mergedLineNum !4
+  %tobool24 = icmp ne i32 %call23, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool24, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+cond.end27:                                       ; preds = %cond.false26, %cond.true25
+  %cond28 = phi i32 [ %cur_nonb.1, %cond.true25 ], [ %last_nonb.0, %cond.false26 ], !sourceFile !3, !mergedLineNum !4
+  %call = call i32 @x264_vbv_frame_cost(%struct.x264_t* %h, %struct.x264_mb_analysis_t* %a, %struct.x264_frame** %frames, i32 %cond28, i32 %cur_nonb.1, i32 %cur_nonb.1), !sourceFile !3, !mergedLineNum !4
+  %idxprom29 = sext i32 %cond to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx30 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %frames, i64 %idxprom29, !sourceFile !3, !mergedLineNum !4
+  %8 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx30, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_planned_satd = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %8, i32 0, i32 72, !sourceFile !3, !mergedLineNum !4
+  %idxprom31 = sext i32 %idx.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx32 = getelementptr inbounds [251 x i32], [251 x i32]* %i_planned_satd, i64 0, i64 %idxprom31, !sourceFile !3, !mergedLineNum !4
+  store i32 %call, i32* %arrayidx32, align 4, !sourceFile !3, !mergedLineNum !4
+  %9 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx18, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_type35 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %9, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %10 = load i32, i32* %i_type35, align 4, !sourceFile !3, !mergedLineNum !4
+  %conv = trunc i32 %10 to i8, !sourceFile !3, !mergedLineNum !4
+  %11 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx30, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_planned_type = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %11, i32 0, i32 71, !sourceFile !3, !mergedLineNum !4
+  %arrayidx39 = getelementptr inbounds [251 x i8], [251 x i8]* %i_planned_type, i64 0, i64 %idxprom31, !sourceFile !3, !mergedLineNum !4
+  store i8 %conv, i8* %arrayidx39, align 1, !sourceFile !3, !mergedLineNum !4
+  %i_coded_fields_lookahead40 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %i_coded_fields_lookahead40, align 4, !sourceFile !3, !mergedLineNum !4
+  %13 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx18, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_coded_fields_lookahead43 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %13, i32 0, i32 74, !sourceFile !3, !mergedLineNum !4
+  store i32 %12, i32* %i_coded_fields_lookahead43, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_cpb_delay_lookahead44 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 21, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %i_cpb_delay_lookahead44, align 16, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx18, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_cpb_delay_lookahead47 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %15, i32 0, i32 75, !sourceFile !3, !mergedLineNum !4
+  store i32 %14, i32* %i_cpb_delay_lookahead47, align 4, !sourceFile !3, !mergedLineNum !4
+  %16 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx18, align 8, !sourceFile !3, !mergedLineNum !4
+  call void @x264_calculate_durations(%struct.x264_t* %h, %struct.x264_frame* %16, %struct.x264_frame* %prev_frame.0, i32* %i_cpb_delay_lookahead44, i32* %i_coded_fields_lookahead40), !sourceFile !3, !mergedLineNum !4
+  %tobool52 = icmp ne %struct.x264_frame* %prev_frame.0, null, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool52, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %call89 = call i32 @x264_vbv_frame_cost(%struct.x264_t* %h, %struct.x264_mb_analysis_t* %a, %struct.x264_frame** %frames, i32 %last_nonb.0, i32 %cur_nonb.1, i32 %i.0), !sourceFile !3, !mergedLineNum !4
+  %idxprom90 = sext i32 %cond to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx91 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %frames, i64 %idxprom90, !sourceFile !3, !mergedLineNum !4
+  %24 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx91, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_planned_satd92 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %24, i32 0, i32 72, !sourceFile !3, !mergedLineNum !4
+  %idxprom93 = sext i32 %idx.2 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx94 = getelementptr inbounds [251 x i32], [251 x i32]* %i_planned_satd92, i64 0, i64 %idxprom93, !sourceFile !3, !mergedLineNum !4
+  store i32 %call89, i32* %arrayidx94, align 4, !sourceFile !3, !mergedLineNum !4
+  %25 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx91, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_planned_type97 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %25, i32 0, i32 71, !sourceFile !3, !mergedLineNum !4
+  %arrayidx99 = getelementptr inbounds [251 x i8], [251 x i8]* %i_planned_type97, i64 0, i64 %idxprom93, !sourceFile !3, !mergedLineNum !4
+  store i8 5, i8* %arrayidx99, align 1, !sourceFile !3, !mergedLineNum !4
+  %i_coded_fields_lookahead100 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %26 = load i32, i32* %i_coded_fields_lookahead100, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom101 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx102 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %frames, i64 %idxprom101, !sourceFile !3, !mergedLineNum !4
+  %27 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx102, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_coded_fields_lookahead103 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %27, i32 0, i32 74, !sourceFile !3, !mergedLineNum !4
+  store i32 %26, i32* %i_coded_fields_lookahead103, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_cpb_delay_lookahead104 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 21, !sourceFile !3, !mergedLineNum !4
+  %28 = load i32, i32* %i_cpb_delay_lookahead104, align 16, !sourceFile !3, !mergedLineNum !4
+  %29 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx102, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_cpb_delay_lookahead107 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %29, i32 0, i32 75, !sourceFile !3, !mergedLineNum !4
+  store i32 %28, i32* %i_cpb_delay_lookahead107, align 4, !sourceFile !3, !mergedLineNum !4
+  %30 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx102, align 8, !sourceFile !3, !mergedLineNum !4
+  call void @x264_calculate_durations(%struct.x264_t* %h, %struct.x264_frame* %30, %struct.x264_frame* %prev_frame.2, i32* %i_cpb_delay_lookahead104, i32* %i_coded_fields_lookahead100), !sourceFile !3, !mergedLineNum !4
+  %tobool112 = icmp ne %struct.x264_frame* %prev_frame.2, null, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool112, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else94:                                        ; preds = %if.end56
+  %cmp95 = icmp eq i32 %lookahead_size.1, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp95, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else94:                                        ; preds = %if.end56
+  %cmp95 = icmp eq i32 %lookahead_size.1, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp95, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then232:                                       ; preds = %land.lhs.true225
+  %68 = load i32, i32* %i_type173, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp234 = icmp eq i32 %68, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp234, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then249:                                       ; preds = %if.end245
+  %i_frame250 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %49, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %71 = load i32, i32* %i_frame250, align 8, !sourceFile !3, !mergedLineNum !4
+  %72 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_last_keyframe252 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %72, i32 0, i32 3, !sourceFile !3, !mergedLineNum !4
+  store i32 %71, i32* %i_last_keyframe252, align 4, !sourceFile !3, !mergedLineNum !4
+  %b_keyframe = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %49, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  store i32 1, i32* %b_keyframe, align 16, !sourceFile !3, !mergedLineNum !4
+  %cmp253 = icmp sgt i32 %bframes.0, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp253, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then535:                                       ; preds = %for.body
+  %arrayidx537 = getelementptr inbounds [2 x [2 x i16]*], [2 x [2 x i16]*]* %fenc_mvs, i64 0, i64 %idxprom532, !sourceFile !3, !mergedLineNum !4
+  %98 = load [2 x i16]*, [2 x i16]** %arrayidx537, align 8, !sourceFile !3, !mergedLineNum !4
+  %99 = bitcast [4 x [2 x i16]]* %mvc to i8*, !sourceFile !3, !mergedLineNum !4
+  call void @llvm.lifetime.start.p0i8(i64 16, i8* %99) #11, !sourceFile !3, !mergedLineNum !4
+  %arrayidx538 = getelementptr inbounds [4 x [2 x i16]], [4 x [2 x i16]]* %mvc, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arraydecay539 = getelementptr inbounds [2 x i16], [2 x i16]* %arrayidx538, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %100 = bitcast i16* %arraydecay539 to %union.x264_union32_t*, !sourceFile !3, !mergedLineNum !4
+  %i540 = bitcast %union.x264_union32_t* %100 to i32*, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %i540, align 4, !sourceFile !3, !mergedLineNum !4
+  %arrayidx541 = getelementptr inbounds [4 x [2 x i16]], [4 x [2 x i16]]* %mvc, i64 0, i64 2, !sourceFile !3, !mergedLineNum !4
+  %arraydecay542 = getelementptr inbounds [2 x i16], [2 x i16]* %arrayidx541, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %101 = bitcast i16* %arraydecay542 to %union.x264_union32_t*, !sourceFile !3, !mergedLineNum !4
+  %i543 = bitcast %union.x264_union32_t* %101 to i32*, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %i543, align 4, !sourceFile !3, !mergedLineNum !4
+  %102 = load %struct.x264_sps_t*, %struct.x264_sps_t** %sps, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_mb_width545 = getelementptr inbounds %struct.x264_sps_t, %struct.x264_sps_t* %102, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %103 = load i32, i32* %i_mb_width545, align 4, !sourceFile !3, !mergedLineNum !4
+  %sub546 = sub nsw i32 %103, 1, !sourceFile !3, !mergedLineNum !4
+  %cmp547 = icmp slt i32 %3, %sub546, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp547, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then563:                                       ; preds = %if.end557
+  %idxprom564 = sext i32 %6 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx565 = getelementptr inbounds [2 x i16], [2 x i16]* %98, i64 %idxprom564, !sourceFile !3, !mergedLineNum !4
+  %arraydecay566 = getelementptr inbounds [2 x i16], [2 x i16]* %arrayidx565, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %106 = bitcast i16* %arraydecay566 to %union.x264_union32_t*, !sourceFile !3, !mergedLineNum !4
+  %i567 = bitcast %union.x264_union32_t* %106 to i32*, !sourceFile !3, !mergedLineNum !4
+  %107 = load i32, i32* %i567, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom568 = sext i32 %moved.sel to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx569 = getelementptr inbounds [4 x [2 x i16]], [4 x [2 x i16]]* %mvc, i64 0, i64 %idxprom568, !sourceFile !3, !mergedLineNum !4
+  %arraydecay570 = getelementptr inbounds [2 x i16], [2 x i16]* %arrayidx569, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %108 = bitcast i16* %arraydecay570 to %union.x264_union32_t*, !sourceFile !3, !mergedLineNum !4
+  %i571 = bitcast %union.x264_union32_t* %108 to i32*, !sourceFile !3, !mergedLineNum !4
+  store i32 %107, i32* %i571, align 4, !sourceFile !3, !mergedLineNum !4
+  %inc572 = add nsw i32 %moved.sel, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp51, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end586:                                        ; preds = %merged.bb1491
+  %109 = load %struct.x264_sps_t*, %struct.x264_sps_t** %sps, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_mb_width588 = getelementptr inbounds %struct.x264_sps_t, %struct.x264_sps_t* %109, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %110 = load i32, i32* %i_mb_width588, align 4, !sourceFile !3, !mergedLineNum !4
+  %sub589 = sub nsw i32 %110, 1, !sourceFile !3, !mergedLineNum !4
+  %cmp590 = icmp slt i32 %3, %sub589, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp590, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end626:                                        ; preds = %if.else615, %if.then607
+  %arrayidx628 = getelementptr inbounds [2 x %struct.x264_me_t], [2 x %struct.x264_me_t]* %m, i64 0, i64 %idxprom532, !sourceFile !3, !mergedLineNum !4
+  call void @x264_me_search_ref(%struct.x264_t* %h, %struct.x264_me_t* %arrayidx628, [2 x i16]* %arrayidx538, i32 %i_mvc.2, i32* null), !sourceFile !3, !mergedLineNum !4
+  %cost = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx628, i32 0, i32 12, !sourceFile !3, !mergedLineNum !4
+  %113 = load i32, i32* %cost, align 8, !sourceFile !3, !mergedLineNum !4
+  %sub632 = sub nsw i32 %113, 2, !sourceFile !3, !mergedLineNum !4
+  store i32 %sub632, i32* %cost, align 8, !sourceFile !3, !mergedLineNum !4
+  %mv = getelementptr inbounds %struct.x264_me_t, %struct.x264_me_t* %arrayidx628, i32 0, i32 13, !sourceFile !3, !mergedLineNum !4
+  %arraydecay635 = getelementptr inbounds [2 x i16], [2 x i16]* %mv, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %114 = bitcast i16* %arraydecay635 to %union.x264_union32_t*, !sourceFile !3, !mergedLineNum !4
+  %i636 = bitcast %union.x264_union32_t* %114 to i32*, !sourceFile !3, !mergedLineNum !4
+  %115 = load i32, i32* %i636, align 4, !sourceFile !3, !mergedLineNum !4
+  %tobool637 = icmp ne i32 %115, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool637, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body42:                                       ; preds = %for.cond38
+  %i_satd_i8x8chroma_dir = getelementptr inbounds %struct.x264_mb_analysis_t, %struct.x264_mb_analysis_t* %a, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  %idxprom45 = sext i32 %conv39 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx46 = getelementptr inbounds [7 x i32], [7 x i32]* %i_satd_i8x8chroma_dir, i64 0, i64 %idxprom45, !sourceFile !3, !mergedLineNum !4
+  %14 = load i32, i32* %arrayidx46, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp47 = icmp slt i32 %14, %div37, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp47, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then444:                                       ; preds = %for.body437
+  %tobool445 = icmp ne i32 %j432.0, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool445, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %b_vfr_input = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 47, !sourceFile !3, !mergedLineNum !4
+  %8 = load i32, i32* %b_vfr_input, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool17 = icmp ne i32 %8, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %b_vfr_input = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 47, !sourceFile !3, !mergedLineNum !4
+  %8 = load i32, i32* %b_vfr_input, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool17 = icmp ne i32 %8, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end56:                                         ; preds = %merged.bb
+  %9 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next58 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %9, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list59 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next58, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %10 = load %struct.x264_frame**, %struct.x264_frame*** %list59, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom60 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx61 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %10, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %11 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx61, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_duration62 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %11, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %i_duration62, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_prev_duration63 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 17, !sourceFile !3, !mergedLineNum !4
+  store i32 %12, i32* %i_prev_duration63, align 16, !sourceFile !3, !mergedLineNum !4
+  %13 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next65 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %13, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list66 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next65, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %14 = load %struct.x264_frame**, %struct.x264_frame*** %list66, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx68 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %14, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx68, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_frame = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %15, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %16 = load i32, i32* %i_frame, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_disp_fields_last_frame = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %17 = load i32, i32* %i_disp_fields_last_frame, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp69 = icmp sgt i32 %16, %17, !sourceFile !3, !mergedLineNum !4
+  %cmp71 = icmp sgt i32 %moved.sel, 0, !sourceFile !3, !mergedLineNum !4
+  %or.cond = select i1 %cmp69, i1 %cmp71, i1 false, !sourceFile !3, !mergedLineNum !4
+  br i1 %or.cond, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end56:                                         ; preds = %merged.bb
+  %9 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next58 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %9, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list59 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next58, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %10 = load %struct.x264_frame**, %struct.x264_frame*** %list59, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom60 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx61 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %10, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %11 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx61, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_duration62 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %11, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %i_duration62, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_prev_duration63 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 17, !sourceFile !3, !mergedLineNum !4
+  store i32 %12, i32* %i_prev_duration63, align 16, !sourceFile !3, !mergedLineNum !4
+  %13 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next65 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %13, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list66 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next65, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %14 = load %struct.x264_frame**, %struct.x264_frame*** %list66, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx68 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %14, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx68, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_frame = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %15, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %16 = load i32, i32* %i_frame, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_disp_fields_last_frame = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %17 = load i32, i32* %i_disp_fields_last_frame, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp69 = icmp sgt i32 %16, %17, !sourceFile !3, !mergedLineNum !4
+  %cmp71 = icmp sgt i32 %moved.sel, 0, !sourceFile !3, !mergedLineNum !4
+  %or.cond = select i1 %cmp69, i1 %cmp71, i1 false, !sourceFile !3, !mergedLineNum !4
+  br i1 %or.cond, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end56:                                         ; preds = %merged.bb
+  %9 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next58 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %9, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list59 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next58, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %10 = load %struct.x264_frame**, %struct.x264_frame*** %list59, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom60 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx61 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %10, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %11 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx61, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_duration62 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %11, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %i_duration62, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_prev_duration63 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 17, !sourceFile !3, !mergedLineNum !4
+  store i32 %12, i32* %i_prev_duration63, align 16, !sourceFile !3, !mergedLineNum !4
+  %13 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next65 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %13, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list66 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next65, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %14 = load %struct.x264_frame**, %struct.x264_frame*** %list66, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx68 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %14, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx68, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_frame = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %15, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %16 = load i32, i32* %i_frame, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_disp_fields_last_frame = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %17 = load i32, i32* %i_disp_fields_last_frame, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp69 = icmp sgt i32 %16, %17, !sourceFile !3, !mergedLineNum !4
+  %cmp71 = icmp sgt i32 %moved.sel, 0, !sourceFile !3, !mergedLineNum !4
+  %or.cond = select i1 %cmp69, i1 %cmp71, i1 false, !sourceFile !3, !mergedLineNum !4
+  br i1 %or.cond, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end56:                                         ; preds = %merged.bb
+  %9 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next58 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %9, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list59 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next58, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %10 = load %struct.x264_frame**, %struct.x264_frame*** %list59, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom60 = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx61 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %10, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %11 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx61, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_duration62 = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %11, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %12 = load i32, i32* %i_duration62, align 16, !sourceFile !3, !mergedLineNum !4
+  %i_prev_duration63 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 17, !sourceFile !3, !mergedLineNum !4
+  store i32 %12, i32* %i_prev_duration63, align 16, !sourceFile !3, !mergedLineNum !4
+  %13 = load %struct.x264_lookahead_t*, %struct.x264_lookahead_t** %lookahead, align 16, !sourceFile !3, !mergedLineNum !4
+  %next65 = getelementptr inbounds %struct.x264_lookahead_t, %struct.x264_lookahead_t* %13, i32 0, i32 7, !sourceFile !3, !mergedLineNum !4
+  %list66 = getelementptr inbounds %struct.x264_synch_frame_list_t, %struct.x264_synch_frame_list_t* %next65, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %14 = load %struct.x264_frame**, %struct.x264_frame*** %list66, align 8, !sourceFile !3, !mergedLineNum !4
+  %arrayidx68 = getelementptr inbounds %struct.x264_frame*, %struct.x264_frame** %14, i64 %idxprom60, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_frame*, %struct.x264_frame** %arrayidx68, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_frame = getelementptr inbounds %struct.x264_frame, %struct.x264_frame* %15, i32 0, i32 10, !sourceFile !3, !mergedLineNum !4
+  %16 = load i32, i32* %i_frame, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_disp_fields_last_frame = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %17 = load i32, i32* %i_disp_fields_last_frame, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp69 = icmp sgt i32 %16, %17, !sourceFile !3, !mergedLineNum !4
+  %cmp71 = icmp sgt i32 %moved.sel, 0, !sourceFile !3, !mergedLineNum !4
+  %or.cond = select i1 %cmp69, i1 %cmp71, i1 false, !sourceFile !3, !mergedLineNum !4
+  br i1 %or.cond, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end245:                                        ; preds = %if.end238, %if.then242, %land.lhs.true225, %lor.lhs.false221
+  %56 = load i32, i32* %i_type173, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp247 = icmp eq i32 %56, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp247, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end245:                                        ; preds = %if.end238, %if.then242, %land.lhs.true225, %lor.lhs.false221
+  %56 = load i32, i32* %i_type173, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp247 = icmp eq i32 %56, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp247, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end245:                                        ; preds = %if.end238, %if.then242, %land.lhs.true225, %lor.lhs.false221
+  %56 = load i32, i32* %i_type173, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp247 = icmp eq i32 %56, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp247, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+for.body598:                                      ; preds = %for.cond593
+  %109 = bitcast i32* %frame_number to i8*, !sourceFile !3, !mergedLineNum !4
+  call void @llvm.lifetime.start.p0i8(i64 4, i8* %109) #13, !sourceFile !3, !mergedLineNum !4
+  call void @llvm.lifetime.start.p0i8(i64 1, i8* %pict_type600) #13, !sourceFile !3, !mergedLineNum !4
+  %110 = bitcast float* %qp to i8*, !sourceFile !3, !mergedLineNum !4
+  call void @llvm.lifetime.start.p0i8(i64 4, i8* %110) #13, !sourceFile !3, !mergedLineNum !4
+  %call601 = call i8* @strchr(i8* %p.1, i32 59) #15, !sourceFile !3, !mergedLineNum !4
+  %tobool602 = icmp ne i8* %call601, null, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool602, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then648:                                       ; preds = %for.end645
+  %weight = getelementptr inbounds %struct.ratecontrol_entry_t, %struct.ratecontrol_entry_t* %arrayidx617, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  %arrayidx650 = getelementptr inbounds [2 x i16], [2 x i16]* %weight, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx652 = getelementptr inbounds [2 x i16], [2 x i16]* %weight, i64 0, i64 1, !sourceFile !3, !mergedLineNum !4
+  %call653 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %call646, i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.54, i64 0, i64 0), i16* %i_weight_denom, i16* %arrayidx650, i16* %arrayidx652) #13, !sourceFile !3, !mergedLineNum !4
+  %cmp654 = icmp ne i32 %call653, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp654, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end659:                                        ; preds = %merged.bb1254, %for.end645
+  %115 = load i8, i8* %pict_type600, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv660 = sext i8 %115 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp661 = icmp ne i32 %conv660, 98, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp661, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body178:                                      ; preds = %for.cond173
+  %30 = load %struct.x264_zone_t*, %struct.x264_zone_t** %zones128, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom180 = sext i32 %i172.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx181 = getelementptr inbounds %struct.x264_zone_t, %struct.x264_zone_t* %30, i64 %idxprom180, !sourceFile !3, !mergedLineNum !4
+  %param182 = getelementptr inbounds %struct.x264_zone_t, %struct.x264_zone_t* %arrayidx181, i32 0, i32 5, !sourceFile !3, !mergedLineNum !4
+  %31 = load %struct.x264_param_t*, %struct.x264_param_t** %param182, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool183 = icmp ne %struct.x264_param_t* %31, null, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool183, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+for.body:                                         ; preds = %for.cond
+  %thread = getelementptr inbounds %struct.x264_t, %struct.x264_t* %h, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  %idxprom = sext i32 %i.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx56 = getelementptr inbounds [129 x %struct.x264_t*], [129 x %struct.x264_t*]* %thread, i64 0, i64 %idxprom, !sourceFile !3, !mergedLineNum !4
+  %15 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %rc57 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %15, i32 0, i32 56, !sourceFile !3, !mergedLineNum !4
+  %16 = load %struct.x264_ratecontrol_t*, %struct.x264_ratecontrol_t** %rc57, align 16, !sourceFile !3, !mergedLineNum !4
+  %b_abr = getelementptr inbounds %struct.x264_ratecontrol_t, %struct.x264_ratecontrol_t* %16, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %b_abr, align 8, !sourceFile !3, !mergedLineNum !4
+  %17 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %rc61 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %17, i32 0, i32 56, !sourceFile !3, !mergedLineNum !4
+  %18 = load %struct.x264_ratecontrol_t*, %struct.x264_ratecontrol_t** %rc61, align 16, !sourceFile !3, !mergedLineNum !4
+  %b_2pass = getelementptr inbounds %struct.x264_ratecontrol_t, %struct.x264_ratecontrol_t* %18, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %b_2pass, align 4, !sourceFile !3, !mergedLineNum !4
+  %19 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param65 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %19, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %rc66 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param65, i32 0, i32 42, !sourceFile !3, !mergedLineNum !4
+  %i_rc_method = getelementptr inbounds %struct.anon.1, %struct.anon.1* %rc66, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %i_rc_method, align 8, !sourceFile !3, !mergedLineNum !4
+  %20 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param70 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %20, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %rc71 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param70, i32 0, i32 42, !sourceFile !3, !mergedLineNum !4
+  %b_stat_read72 = getelementptr inbounds %struct.anon.1, %struct.anon.1* %rc71, i32 0, i32 20, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %b_stat_read72, align 8, !sourceFile !3, !mergedLineNum !4
+  %21 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param76 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %21, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %i_bframe_adaptive77 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param76, i32 0, i32 18, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %i_bframe_adaptive77, align 8, !sourceFile !3, !mergedLineNum !4
+  %22 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param81 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %22, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %i_scenecut_threshold = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param81, i32 0, i32 15, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %i_scenecut_threshold, align 4, !sourceFile !3, !mergedLineNum !4
+  %23 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param85 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %23, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %rc86 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param85, i32 0, i32 42, !sourceFile !3, !mergedLineNum !4
+  %b_mb_tree = getelementptr inbounds %struct.anon.1, %struct.anon.1* %rc86, i32 0, i32 16, !sourceFile !3, !mergedLineNum !4
+  store i32 0, i32* %b_mb_tree, align 8, !sourceFile !3, !mergedLineNum !4
+  %24 = load %struct.x264_t*, %struct.x264_t** %arrayidx56, align 8, !sourceFile !3, !mergedLineNum !4
+  %param90 = getelementptr inbounds %struct.x264_t, %struct.x264_t* %24, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %i_bframe = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param90, i32 0, i32 17, !sourceFile !3, !mergedLineNum !4
+  %25 = load i32, i32* %i_bframe, align 4, !sourceFile !3, !mergedLineNum !4
+  %cmp91 = icmp sgt i32 %25, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp91, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+while.body:                                       ; preds = %while.cond
+  %call31 = call i8* @strchr(i8* %call29, i32 61) #14, !sourceFile !3, !mergedLineNum !4
+  %tobool32 = icmp ne i8* %call31, null, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool32, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+for.body76:                                       ; preds = %for.cond69
+  %idxprom78 = sext i32 %i63.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx79 = getelementptr inbounds [6 x i8*], [6 x i8*]* %scaling_list41, i64 0, i64 %idxprom78, !sourceFile !3, !mergedLineNum !4
+  %13 = load i8*, i8** %arrayidx79, align 8, !sourceFile !3, !mergedLineNum !4
+  %idxprom80 = sext i32 %j.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx81 = getelementptr inbounds i8, i8* %13, i64 %idxprom80, !sourceFile !3, !mergedLineNum !4
+  %14 = load i8, i8* %arrayidx81, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv82 = zext i8 %14 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp83 = icmp eq i32 %conv82, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp83, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+for.body322:                                      ; preds = %for.cond318
+  %pic325 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 66, !sourceFile !3, !mergedLineNum !4
+  %p_fdec326 = getelementptr inbounds %struct.anon.11, %struct.anon.11* %pic325, i32 0, i32 18, !sourceFile !3, !mergedLineNum !4
+  %arrayidx327 = getelementptr inbounds [3 x i8*], [3 x i8*]* %p_fdec326, i64 0, i64 0, !sourceFile !3, !mergedLineNum !4
+  %69 = load i8*, i8** %arrayidx327, align 16, !sourceFile !3, !mergedLineNum !4
+  %idxprom328 = sext i32 %i313.0 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx329 = getelementptr inbounds [16 x i16], [16 x i16]* @block_idx_xy_fdec, i64 0, i64 %idxprom328, !sourceFile !3, !mergedLineNum !4
+  %70 = load i16, i16* %arrayidx329, align 2, !sourceFile !3, !mergedLineNum !4
+  %idxprom330 = zext i16 %70 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx331 = getelementptr inbounds i8, i8* %69, i64 %idxprom330, !sourceFile !3, !mergedLineNum !4
+  %intra4x4_pred_mode335 = getelementptr inbounds %struct.anon.12, %struct.anon.12* %cache, i32 0, i32 0, !sourceFile !3, !mergedLineNum !4
+  %arrayidx337 = getelementptr inbounds [27 x i32], [27 x i32]* @x264_scan8, i64 0, i64 %idxprom328, !sourceFile !3, !mergedLineNum !4
+  %71 = load i32, i32* %arrayidx337, align 4, !sourceFile !3, !mergedLineNum !4
+  %idxprom338 = sext i32 %71 to i64, !sourceFile !3, !mergedLineNum !4
+  %arrayidx339 = getelementptr inbounds [40 x i8], [40 x i8]* %intra4x4_pred_mode335, i64 0, i64 %idxprom338, !sourceFile !3, !mergedLineNum !4
+  %72 = load i8, i8* %arrayidx339, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv340 = sext i8 %72 to i32, !sourceFile !3, !mergedLineNum !4
+  %i_neighbour4 = getelementptr inbounds %struct.anon.10, %struct.anon.10* %mb, i32 0, i32 26, !sourceFile !3, !mergedLineNum !4
+  %arrayidx343 = getelementptr inbounds [16 x i32], [16 x i32]* %i_neighbour4, i64 0, i64 %idxprom328, !sourceFile !3, !mergedLineNum !4
+  %73 = load i32, i32* %arrayidx343, align 4, !sourceFile !3, !mergedLineNum !4
+  %and344 = and i32 %73, 6, !sourceFile !3, !mergedLineNum !4
+  %cmp345 = icmp eq i32 %and344, 2, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp345, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then776:                                       ; preds = %for.cond.cleanup707
+  %cmp777 = icmp slt i32 %i_decimate_8x8702.0, 4, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp777, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.then776:                                       ; preds = %for.cond.cleanup707
+  %cmp777 = icmp slt i32 %i_decimate_8x8702.0, 4, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp777, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+if.else:                                          ; preds = %for.body
+  %cmp25 = icmp sgt i32 %2, %i_poc, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp25, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %land.lhs.true, %if.then61
+  %tobool98 = icmp ne i32 %weightluma.0, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool98, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+land.lhs.true:                                    ; preds = %if.else
+  %b_sliced_threads = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 2, !sourceFile !3, !mergedLineNum !4
+  %7 = load i32, i32* %b_sliced_threads, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool16 = icmp ne i32 %7, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool16, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %while.body
+  %i_slice_count = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 58, !sourceFile !3, !mergedLineNum !4
+  %6 = load i32, i32* %i_slice_count, align 4, !sourceFile !3, !mergedLineNum !4
+  %tobool14 = icmp ne i32 %6, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool14, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+while.body:                                       ; preds = %while.cond
+  store i32 %0, i32* %i_last_mb, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_slice_max_mbs = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 57, !sourceFile !3, !mergedLineNum !4
+  %4 = load i32, i32* %i_slice_max_mbs, align 16, !sourceFile !3, !mergedLineNum !4
+  %tobool5 = icmp ne i32 %4, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool5, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+while.body:                                       ; preds = %while.cond
+  store i32 %0, i32* %i_last_mb, align 8, !sourceFile !3, !mergedLineNum !4
+  %i_slice_max_mbs = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 57, !sourceFile !3, !mergedLineNum !4
+  %4 = load i32, i32* %i_slice_max_mbs, align 16, !sourceFile !3, !mergedLineNum !4
+  %tobool5 = icmp ne i32 %4, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool5, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+if.then65:                                        ; preds = %lor.lhs.false60, %lor.lhs.false55, %for.body50
+  %call67 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %arraydecay, i8* getelementptr inbounds ([37 x i8], [37 x i8]* @.str.12, i64 0, i64 0), i32* %end) #10, !sourceFile !3, !mergedLineNum !4
+  %cmp68 = icmp eq i32 %call67, 1, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp68, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end168:                                        ; preds = %lor.lhs.false162
+  %call170 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %arraydecay, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.13, i64 0, i64 0), i32* %start, i32* %end, double* %seq_fps) #10, !sourceFile !3, !mergedLineNum !4
+  %cmp171 = icmp ne i32 %call170, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp171, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end168:                                        ; preds = %lor.lhs.false162
+  %call170 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %arraydecay, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.13, i64 0, i64 0), i32* %start, i32* %end, double* %seq_fps) #10, !sourceFile !3, !mergedLineNum !4
+  %cmp171 = icmp ne i32 %call170, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp171, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end281:                                        ; preds = %lor.lhs.false275
+  %call283 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %arraydecay, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.13, i64 0, i64 0), i32* %start, i32* %end, double* %seq_fps) #10, !sourceFile !3, !mergedLineNum !4
+  %cmp284 = icmp ne i32 %call283, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp284, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end281:                                        ; preds = %lor.lhs.false275
+  %call283 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %arraydecay, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.13, i64 0, i64 0), i32* %start, i32* %end, double* %seq_fps) #10, !sourceFile !3, !mergedLineNum !4
+  %cmp284 = icmp ne i32 %call283, 3, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp284, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+cond.end:                                         ; preds = %cond.false, %cond.true
+  %cond = phi i64 [ %call520, %cond.true ], [ %conv522, %cond.false ], !sourceFile !3, !mergedLineNum !4
+  store i64 %cond, i64* %timebase_den483, align 8, !sourceFile !3, !mergedLineNum !4
+  %cmp525 = icmp ugt i64 %cond, 4294967295, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp525, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
+
+if.end121:                                        ; preds = %for.body
+  %b_vfr_input122 = getelementptr inbounds %struct.x264_param_t, %struct.x264_param_t* %param, i32 0, i32 47, !sourceFile !3, !mergedLineNum !4
+  %54 = load i32, i32* %b_vfr_input122, align 8, !sourceFile !3, !mergedLineNum !4
+  %tobool123 = icmp ne i32 %54, 0, !sourceFile !3, !mergedLineNum !4
+  br i1 %tobool123, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else33:                                        ; preds = %if.else27
+  %cmp35 = icmp eq i32 %conv, 98, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp35, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else27:                                        ; preds = %if.else21
+  %cmp29 = icmp eq i32 %conv, 66, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp29, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else27:                                        ; preds = %if.else21
+  %cmp29 = icmp eq i32 %conv, 66, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp29, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else21:                                        ; preds = %if.else
+  %cmp23 = icmp eq i32 %conv, 80, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp23, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else21:                                        ; preds = %if.else
+  %cmp23 = icmp eq i32 %conv, 80, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp23, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else21:                                        ; preds = %if.else
+  %cmp23 = icmp eq i32 %conv, 80, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp23, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %if.end10
+  %cmp17 = icmp eq i32 %conv, 105, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %if.end10
+  %cmp17 = icmp eq i32 %conv, 105, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %if.end10
+  %cmp17 = icmp eq i32 %conv, 105, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.else:                                          ; preds = %if.end10
+  %cmp17 = icmp eq i32 %conv, 105, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp17, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end10:                                         ; preds = %if.end
+  %7 = load i32, i32* %qp, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %7, 1, !sourceFile !3, !mergedLineNum !4
+  %i_qpplus111 = getelementptr inbounds %struct.x264_picture_t, %struct.x264_picture_t* %pic, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %i_qpplus111, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %type, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp12 = icmp eq i32 %conv, 73, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end10:                                         ; preds = %if.end
+  %7 = load i32, i32* %qp, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %7, 1, !sourceFile !3, !mergedLineNum !4
+  %i_qpplus111 = getelementptr inbounds %struct.x264_picture_t, %struct.x264_picture_t* %pic, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %i_qpplus111, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %type, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp12 = icmp eq i32 %conv, 73, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end10:                                         ; preds = %if.end
+  %7 = load i32, i32* %qp, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %7, 1, !sourceFile !3, !mergedLineNum !4
+  %i_qpplus111 = getelementptr inbounds %struct.x264_picture_t, %struct.x264_picture_t* %pic, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %i_qpplus111, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %type, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp12 = icmp eq i32 %conv, 73, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end10:                                         ; preds = %if.end
+  %7 = load i32, i32* %qp, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %7, 1, !sourceFile !3, !mergedLineNum !4
+  %i_qpplus111 = getelementptr inbounds %struct.x264_picture_t, %struct.x264_picture_t* %pic, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %i_qpplus111, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %type, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp12 = icmp eq i32 %conv, 73, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+
+if.end10:                                         ; preds = %if.end
+  %7 = load i32, i32* %qp, align 4, !sourceFile !3, !mergedLineNum !4
+  %add = add nsw i32 %7, 1, !sourceFile !3, !mergedLineNum !4
+  %i_qpplus111 = getelementptr inbounds %struct.x264_picture_t, %struct.x264_picture_t* %pic, i32 0, i32 1, !sourceFile !3, !mergedLineNum !4
+  store i32 %add, i32* %i_qpplus111, align 4, !sourceFile !3, !mergedLineNum !4
+  %8 = load i8, i8* %type, align 1, !sourceFile !3, !mergedLineNum !4
+  %conv = sext i8 %8 to i32, !sourceFile !3, !mergedLineNum !4
+  %cmp12 = icmp eq i32 %conv, 73, !sourceFile !3, !mergedLineNum !4
+  br i1 %cmp12, label %unify.bb, label %unify.bb, !sourceFile !3, !mergedLineNum !4
+Printing state of ForceCFMSE: 0
+Printing state of OnlyInLoops: 1
+Total number of unique function names: 0
