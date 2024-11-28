@@ -1,0 +1,31 @@
+
+srinivasanr@phoenix:~/omntpp$ perf stat  bash run.sh 
+
+ Performance counter stats for 'bash run.sh':
+
+        328,819.80 msec task-clock                       #    1.000 CPUs utilized             
+               739      context-switches                 #    2.247 /sec                      
+                 1      cpu-migrations                   #    0.003 /sec                      
+            69,059      page-faults                      #  210.021 /sec                      
+   853,103,996,469      cycles                           #    2.594 GHz                       
+ 1,256,944,293,887      instructions                     #    1.47  insn per cycle            
+   242,629,883,221      branches                         #  737.881 M/sec                     
+     4,701,858,976      branch-misses                    #    1.94% of all branches           
+                        TopdownL1                 #     34.0 %  tma_backend_bound      
+                                                  #     21.5 %  tma_bad_speculation    
+                                                  #     20.6 %  tma_frontend_bound     
+                                                  #     23.9 %  tma_retiring           
+                        TopdownL2                 #     20.8 %  tma_branch_mispredicts 
+                                                  #     10.4 %  tma_core_bound         
+                                                  #     11.2 %  tma_fetch_bandwidth    
+                                                  #      9.4 %  tma_fetch_latency      
+                                                  #      1.9 %  tma_heavy_operations   
+                                                  #     22.0 %  tma_light_operations   
+                                                  #      0.6 %  tma_machine_clears     
+                                                  #     23.6 %  tma_memory_bound       
+
+     328.849316247 seconds time elapsed
+
+     328.636365000 seconds user
+       0.182186000 seconds sys
+

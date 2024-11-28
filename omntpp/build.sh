@@ -1,0 +1,1 @@
+~/llvm-cfmse/bin/clang++ -DSPEC -DWITH_NETBUILDER=yes -std=c++98  -O3 -mllvm -enable-cfmse=0  -mllvm -force-cfmse -mllvm -cfmse-unsafe-dci=0  ./simulator/*.cc ./model/*.cc -I ./simulator/ -I ./simulator/platdep/
