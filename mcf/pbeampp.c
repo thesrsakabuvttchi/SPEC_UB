@@ -65,16 +65,14 @@ int cost_compare( b1, b2 )
     BASKER **b2;
 #endif
 {
-  int retval = 0;
   if( (*b1)->abs_cost < (*b2)->abs_cost )
-    retval = 1;
+    return 1;
   if( (*b1)->abs_cost > (*b2)->abs_cost )
-    retval = -1;
+    return -1;
   if( (*b1)->a->id > (*b2)->a->id )
-    retval = 1;
+    return 1;
   else
-    retval = -1;
-  return(retval);
+    return -1;
 }
 
 
