@@ -51,34 +51,11 @@ Register_Class(cMessageHeap)
 
 inline int operator <= (cMessage& a, cMessage& b)
 {
-    // Convert all required values to double
-    double arrivalTimeA = a.getArrivalTime().dbl();  // Convert simtime_t to double
-    double arrivalTimeB = b.getArrivalTime().dbl();  // Convert simtime_t to double
-
-    double schedulingPriorityA = static_cast<double>(a.getSchedulingPriority());
-    double schedulingPriorityB = static_cast<double>(b.getSchedulingPriority());
-
-    double insertOrderA = static_cast<double>(a.getInsertOrder());
-    double insertOrderB = static_cast<double>(b.getInsertOrder());
-
-    // Initialize the return value
-    int retval = 0;
-
-    // Perform comparisons
-    if (arrivalTimeA < arrivalTimeB) {
-        retval = 1;
-    } else if (arrivalTimeA > arrivalTimeB) {
-        retval = 0;
-    } else if (schedulingPriorityA < schedulingPriorityB) {
-        retval = 1;
-    } else if (schedulingPriorityA > schedulingPriorityB) {
-        retval = 0;
-    } else {
-        retval = (insertOrderA <= insertOrderB);
-    }
-
-    return retval;
-
+    return (a.getArrivalTime() < b.getArrivalTime()) ? 1 :
+           (a.getArrivalTime() > b.getArrivalTime()) ? 0 :
+           (a.getSchedulingPriority() < b.getSchedulingPriority()) ? 1 :
+           (a.getSchedulingPriority() > b.getSchedulingPriority()) ? 0 :
+            a.getInsertOrder() <= b.getInsertOrder();
 }
 
 inline int operator > (cMessage& a, cMessage& b)
