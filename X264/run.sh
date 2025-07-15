@@ -9,8 +9,8 @@ if [ -f "$PERF_SCRIPT_FILE" ]; then
 fi
 
 # Define commands
-cmd1="./x264_no_force --pass 1 --stats x264_stats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720 2>> run_000-1000_x264_r_base.mytest-m64_x264_pass1.err"
-cmd2="./x264_no_force --pass 2 --stats x264_stats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720 2>> run_000-1000_x264_r_base.mytest-m64_x264_pass2.err"
+cmd1="./x264_no_force --pass 1 --stats x264_no_forcetats.log --bitrate 1000 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720 2>> run_000-1000_x264_r_base.mytest-m64_x264_pass1.err"
+cmd2="./x264_no_force --pass 2 --stats x264_no_forcetats.log --bitrate 1000 --dumpyuv 200 --frames 1000 -o BuckBunny_New.264 BuckBunny.yuv 1280x720 2>> run_000-1000_x264_r_base.mytest-m64_x264_pass2.err"
 cmd3="./x264_no_force --seek 500 --dumpyuv 200 --frames 1250 -o BuckBunny_New.264 BuckBunny.yuv 1280x720 2>> run_0500-1250_x264_r_base.mytest-m64_x264.err"
 
 # Run perf record and script for each command

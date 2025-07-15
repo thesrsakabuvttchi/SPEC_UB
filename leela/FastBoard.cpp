@@ -1217,7 +1217,7 @@ bool FastBoard::kill_or_connect(int color, int vertex) {
         int sq = get_square(ai);                              
         int libs = m_libs[m_parent[ai]];
         
-        if ((libs <= 1 && sq == !color) || (libs >= 3 && sq == color)) {
+        if ((libs <= 1 & sq == !color) | (libs >= 3 & sq == color)) {
             return true;
         }              
     }          
